@@ -1,5 +1,6 @@
 
 {
+  // Set your exported CSS Styles, Formats & save location.
   "liveSassCompile.settings.formats": [
     {
       "format": "expanded",
