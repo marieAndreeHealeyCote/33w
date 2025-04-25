@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: theme-33w
 Theme URI: https://referenced.ca
@@ -11,19 +12,28 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: club-voyage
 */
-
 /* Importation des feuilles de style du thème */
-
 /* Variables */
-// @import "variable/couleur";
-
 /* Base */
-// @import "base/titre";
-
 /* Layout */
-@import "layout/general";
-// @import "layout/entete";
+* {
+  border: 1px solid grey;
+}
 
-/* Composants */
-// @import "composants/bouton";
-// @import "composants/menu";
+.body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.global {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Composants *//*# sourceMappingURL=styles.css.map */
