@@ -18,12 +18,15 @@ Text Domain: club-voyage
 // @import "variable/couleur";
 
 /* Base */
-// @import "base/titre";
+@import "base/h1";
 
 /* Layout */
 @import "layout/general";
-// @import "layout/entete";
+@import "layout/entete";
+@import "layout/hero";
 
 /* Composants */
+@import "composants/recherche";
 // @import "composants/bouton";
 // @import "composants/menu";
+
