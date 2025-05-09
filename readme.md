@@ -4,4 +4,4 @@
 
 #### Auteur : Marie-Andrée Healey-Côté
 
-#### adresse de la page github-page
+#### adresse de la page github-page: https://marieandreehealeycote.github.io/33w/
