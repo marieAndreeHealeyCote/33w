@@ -1,27 +1,26 @@
 /* layout.entete */
-.chck__menu {
+.chk__menu {
   display: none;
 }
-.chck__menu:checked ~ .entete__nav {
+.chk__menu:checked ~ .entete__nav {
   display: flex;
   flex-direction: column;
   .entete__menu {
     flex-direction: column;
   }
 }
+
 .entete {
   background-color: blanchedalmond;
   &__contenu {
     display: flex;
     justify-content: space-between;
   }
-
   &__logo {
     width: 75px;
     height: 75px;
   }
-
-  /* navigation */
+  /*  /////////////////////// Navigation */
   &__nav {
     display: flex;
     justify-content: flex-end;
@@ -40,22 +39,20 @@
       right: 0;
     }
   }
-
   &__menu {
     // ul
     display: flex;
     list-style-type: none;
     gap: 1rem;
   }
-
   &__menu-item {
-    // li
+    //li
+
     a {
       display: block;
       background-color: beige;
-
       &:hover {
-        background-color: burlywood;
+        background-color: rgb(233, 227, 177);
       }
     }
   }

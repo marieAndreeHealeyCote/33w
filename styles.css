@@ -37,10 +37,10 @@ html {
 }
 
 * {
-  border: 1px solid grey;
+  border: 1px solid #ccc;
 }
 
-.body {
+body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -57,21 +57,21 @@ html {
 }
 
 /* layout.entete */
-.chck__menu {
+.chk__menu {
   display: none;
 }
 
-.chck__menu:checked ~ .entete__nav {
+.chk__menu:checked ~ .entete__nav {
   display: flex;
   flex-direction: column;
 }
-.chck__menu:checked ~ .entete__nav .entete__menu {
+.chk__menu:checked ~ .entete__nav .entete__menu {
   flex-direction: column;
 }
 
 .entete {
   background-color: blanchedalmond;
-  /* navigation */
+  /*  /////////////////////// Navigation */
 }
 .entete__contenu {
   display: flex;
@@ -113,7 +113,7 @@ html {
   background-color: beige;
 }
 .entete__menu-item a:hover {
-  background-color: burlywood;
+  background-color: rgb(233, 227, 177);
 }
 
 .hero {
@@ -128,7 +128,7 @@ html {
 }
 
 /* Composants */
-/* composants.recherche */
+/* components.recherche */
 .recherche {
   display: flex;
   align-items: center;
@@ -140,4 +140,4 @@ html {
 }
 .recherche__bouton {
   border-left: 1px solid gray;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */

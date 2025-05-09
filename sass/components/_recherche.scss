@@ -1,0 +1,15 @@
+/* components.recherche */
+.recherche {
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+
+  &__input {
+    border: none;
+    outline: none;
+  }
+
+  &__bouton {
+    border-left: 1px solid gray;
+  }
+}
