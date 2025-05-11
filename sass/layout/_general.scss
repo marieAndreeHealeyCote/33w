@@ -11,7 +11,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
+// Pour valider les éléments sélectionnés en mettant des bordures
 // * {
 //   // border: 1px solid #ccc;
 // }
@@ -29,11 +29,11 @@ img {
   display: block;
   max-width: 100%;
 }
-
-.global {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 900px;
-  margin: 0 auto;
-}
+// Classe créée en classe mais n'a jamais été utilisée
+// .global {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   max-width: 900px;
+//   margin: 0 auto;
+// }

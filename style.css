@@ -54,14 +54,6 @@ img {
   max-width: 100%;
 }
 
-.global {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
 /* layout.entete */
 .entete {
   background-color: white;
@@ -136,7 +128,7 @@ img {
   }
 }
 .hero__titre {
-  font-size: 4em;
+  font-size: 3em;
   text-shadow: seagreen 1px 0 10px;
 }
 @media screen and (max-width: 600px) {
@@ -145,12 +137,14 @@ img {
   }
 }
 .hero__description {
-  max-width: 80ch;
+  max-width: 56ch;
+  font-size: 1.1em;
   font-weight: bold;
 }
 @media screen and (max-width: 600px) {
   .hero__description {
     max-width: 30ch;
+    font-size: 16px;
   }
 }
 .hero__medias-sociaux {
@@ -176,7 +170,6 @@ img {
     display: none;
   }
 }
-
 .formulaire__contenu {
   display: flex;
   gap: 1em;
@@ -195,7 +188,6 @@ img {
   color: white;
   cursor: pointer;
 }
-
 .formulaire__champs input {
   border: 1px solid seagreen;
   padding: 1em;
@@ -207,8 +199,16 @@ img {
 /* layout.galerie */
 .galerie {
   padding: 1em;
+  margin-top: 3em;
 }
-
+.galerie__titre {
+  font-size: 1.5em;
+}
+@media screen and (max-width: 600px) {
+  .galerie__titre {
+    font-size: 16px;
+  }
+}
 .galerie__grille {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18%, 1fr));

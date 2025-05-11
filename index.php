@@ -133,6 +133,6 @@
     </section>
     <footer class="piedpage">© copyright Club de Voyage 2025</footer>
 </body>
-<script type="text/javascript" src="/script/checkbox.js"></script>
+<script src="script/checkbox.js"></script>
 
 </html>
