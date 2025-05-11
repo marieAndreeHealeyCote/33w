@@ -1,14 +1,32 @@
 /*base.titre*/
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(1.5rem, 5.4795vw + -0.137rem, 5rem);
+  font-size: clamp(1rem, 0.6rem + 2vw, 3rem);
+  font-weight: bold;
 }
 h2 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(1rem, 1.5656vw + 0.5323rem, 2rem);
+  font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+  font-weight: bold;
 }
 // Titres n'ont pas été utilisés
-// h3 {}
-// h4 {}
-// h5 {}
-// h6 {}
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  font-weight: bold;
+}
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.2rem);
+  font-style: italic;
+}
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  font-style: italic;
+}
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  font-style: italic;
+}

@@ -19,12 +19,38 @@ Text Domain: club-voyage
 /*base.titre*/
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(1.5rem, 5.4795vw - 0.137rem, 5rem);
+  font-size: clamp(1rem, 0.6rem + 2vw, 3rem);
+  font-weight: bold;
 }
 
 h2 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(1rem, 1.5656vw + 0.5323rem, 2rem);
+  font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  font-weight: bold;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.2rem);
+  font-style: italic;
+}
+
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  font-style: italic;
 }
 
 /* Layout */
@@ -128,13 +154,8 @@ img {
   }
 }
 .hero__titre {
-  font-size: 3em;
+  color: black;
   text-shadow: seagreen 1px 0 10px;
-}
-@media screen and (max-width: 600px) {
-  .hero__titre {
-    font-size: 2em;
-  }
 }
 .hero__description {
   max-width: 56ch;
@@ -202,12 +223,7 @@ img {
   margin-top: 3em;
 }
 .galerie__titre {
-  font-size: 1.5em;
-}
-@media screen and (max-width: 600px) {
-  .galerie__titre {
-    font-size: 24px;
-  }
+  color: black;
 }
 .galerie__grille {
   display: grid;

@@ -14,11 +14,8 @@
   }
 
   &__titre {
-    font-size: 3em;
+    color: black;
     text-shadow: seagreen 1px 0 10px;
-    @media screen and (max-width: $point-rupture) {
-      font-size: 2em;
-    }
   }
 
   &__description {
