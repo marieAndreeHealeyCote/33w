@@ -89,7 +89,7 @@ img {
     display: block;
     position: absolute;
     z-index: 11;
-    top: 0;
+    top: 2.5em;
     right: 0;
   }
 }
@@ -206,7 +206,7 @@ img {
 }
 @media screen and (max-width: 600px) {
   .galerie__titre {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 .galerie__grille {
