@@ -1,0 +1,16 @@
+/* layout.galerie */
+.galerie {
+  padding: 1em;
+}
+
+.galerie__grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18%, 1fr));
+  gap: 10px;
+  @media screen and (max-width: $point-rupture) {
+    display: block;
+    img {
+      margin-top: 1em;
+    }
+  }
+}

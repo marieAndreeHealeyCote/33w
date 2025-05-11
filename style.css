@@ -14,7 +14,9 @@ Text Domain: club-voyage
 */
 /* Importation des feuilles de style du thème */
 /* Variables */
+/* variable.dimension */
 /* Base */
+/*base.titre*/
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1.5rem, 5.4795vw - 0.137rem, 5rem);
@@ -26,6 +28,9 @@ h2 {
 }
 
 /* Layout */
+/* layout.general
+* Description : general styles for the entire application
+*/
 html {
   box-sizing: border-box;
 }
@@ -36,16 +41,17 @@ html {
   box-sizing: inherit;
 }
 
-* {
-  border: 1px solid #ccc;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .global {
@@ -57,35 +63,26 @@ body {
 }
 
 /* layout.entete */
-.chk__menu {
-  display: none;
-}
-
-.chk__menu:checked ~ .entete__nav {
-  display: flex;
-  flex-direction: column;
-}
-.chk__menu:checked ~ .entete__nav .entete__menu {
-  flex-direction: column;
-}
-
 .entete {
-  background-color: blanchedalmond;
-  /*  /////////////////////// Navigation */
+  background-color: white;
+  /* Navigation */
 }
 .entete__contenu {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .entete__logo {
   width: 75px;
   height: 75px;
+  margin: 1em;
+  z-index: 11;
 }
 .entete__nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   flex-wrap: wrap;
-  margin: 0 2rem 0 auto;
 }
 @media screen and (max-width: 600px) {
   .entete__nav {
@@ -99,6 +96,7 @@ body {
   .entete__burger {
     display: block;
     position: absolute;
+    z-index: 11;
     top: 0;
     right: 0;
   }
@@ -107,32 +105,141 @@ body {
   display: flex;
   list-style-type: none;
   gap: 1rem;
+  padding: 0;
 }
 .entete__menu-item a {
   display: block;
-  background-color: beige;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .entete__menu-item a:hover {
-  background-color: rgb(233, 227, 177);
+  text-decoration: underline;
 }
 
+/* layout.hero */
 .hero {
-  background-image: url("images/acores.jpg");
-  background-position: center;
+  background-image: url("images/maldives.webp");
+  background-position: top;
   background-size: cover;
   height: 100vh;
   width: 100%;
+  padding: 0 3em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+@media screen and (max-width: 600px) {
+  .hero {
+    padding: 0 2em;
+  }
+}
+.hero__titre {
+  font-size: 4em;
+  text-shadow: seagreen 1px 0 10px;
+}
+@media screen and (max-width: 600px) {
+  .hero__titre {
+    font-size: 2em;
+  }
+}
+.hero__description {
+  max-width: 80ch;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .hero__description {
+    max-width: 30ch;
+  }
+}
+.hero__medias-sociaux {
+  display: inline-block;
+  margin-top: 1em;
+  max-width: 30px;
+  filter: drop-shadow(0 0 0.1em white);
+}
 
-/* Composants */
+/* layout.formulaire */
+.formulaire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  width: fit-content;
+  margin: -1em auto 0 auto;
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+}
+@media screen and (max-width: 600px) {
+  .formulaire {
+    display: none;
+  }
+}
+
+.formulaire__contenu {
+  display: flex;
+  gap: 1em;
+  align-items: flex-end;
+}
+.formulaire__contenu input[type="submit"] {
+  border: 1px solid seagreen;
+  background-color: white;
+  padding: 0.75em 3.15em;
+  height: fit-content;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.formulaire__contenu input[type="submit"]:hover {
+  background-color: seagreen;
+  color: white;
+  cursor: pointer;
+}
+
+.formulaire__champs input {
+  border: 1px solid seagreen;
+  padding: 1em;
+}
+.formulaire__champs label {
+  display: block;
+}
+
+/* layout.galerie */
+.galerie {
+  padding: 1em;
+}
+
+.galerie__grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18%, 1fr));
+  gap: 10px;
+}
+@media screen and (max-width: 600px) {
+  .galerie__grille {
+    display: block;
+  }
+  .galerie__grille img {
+    margin-top: 1em;
+  }
+}
+
+/* layout.piedpage */
+.piedpage {
+  text-align: center;
+}
+
+/* Components */
 /* components.recherche */
 .recherche {
   display: flex;
   align-items: center;
   border: 1px solid gray;
+  margin: 1em;
+}
+@media screen and (max-width: 600px) {
+  .recherche {
+    display: none;
+  }
 }
 .recherche__input {
   border: none;
@@ -140,4 +247,40 @@ body {
 }
 .recherche__bouton {
   border-left: 1px solid gray;
+}
+
+/* components.bouton */
+.bouton {
+  display: block;
+  padding: 0.5em;
+  width: fit-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  border: 1px solid lightseagreen;
+  border-radius: 5px;
+  background-color: lightcyan;
+}
+.bouton:hover {
+  background-color: lightseagreen;
+  color: white;
+}
+
+/* components.menu */
+.menu {
+  display: none;
+}
+
+.menu:checked ~ .entete__nav {
+  position: absolute;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.menu:checked ~ .entete__nav .entete__menu {
+  flex-direction: column;
+  align-items: center;
 } /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+/* components.bouton */
+.bouton {
+  display: block;
+  padding: 0.5em;
+  width: fit-content;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  border: 1px solid lightseagreen;
+  border-radius: 5px;
+  background-color: lightcyan;
+
+  &:hover {
+    background-color: lightseagreen;
+    color: white;
+  }
+}

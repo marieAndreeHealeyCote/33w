@@ -1,0 +1,48 @@
+/* layout.formulaire */
+.formulaire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  width: fit-content;
+  margin: -1em auto 0 auto;
+
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+
+  @media screen and (max-width: $point-rupture) {
+    display: none;
+  }
+}
+.formulaire__contenu {
+  display: flex;
+  gap: 1em;
+  align-items: flex-end;
+
+  input[type="submit"] {
+    border: 1px solid seagreen;
+    background-color: white;
+    padding: 0.75em 3.15em;
+    height: fit-content;
+
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: seagreen;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+.formulaire__champs {
+  input {
+    border: 1px solid seagreen;
+    padding: 1em;
+  }
+
+  label {
+    display: block;
+  }
+}
