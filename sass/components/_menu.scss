@@ -2,15 +2,17 @@
 .menu {
   display: none;
 }
-.menu:checked ~ .entete__nav {
-  position: absolute;
-  width: 100vw;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  .entete__menu {
+@media screen and (max-width: $point-rupture) {
+  .menu:checked ~ .entete__nav {
+    position: absolute;
+    width: 100vw;
+    z-index: 10;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: white;
+    .entete__menu {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
