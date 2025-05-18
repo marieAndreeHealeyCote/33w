@@ -91,10 +91,12 @@ img {
   position: relative;
 }
 .entete__logo {
+  z-index: 11;
+}
+.entete__logo img {
   width: 75px;
   height: 75px;
   margin: 1em;
-  z-index: 11;
 }
 .entete__nav {
   display: flex;
@@ -121,6 +123,7 @@ img {
 }
 .entete__menu {
   display: flex;
+  align-items: center;
   list-style-type: none;
   gap: 1rem;
   padding: 0;
@@ -138,7 +141,7 @@ img {
 
 /* layout.hero */
 .hero {
-  background-image: url("images/maldives.webp");
+  background-image: url("images/acores-large.webp");
   background-position: top;
   background-size: cover;
   height: 100vh;
@@ -155,12 +158,13 @@ img {
 }
 .hero__titre {
   color: black;
-  text-shadow: seagreen 1px 0 10px;
+  text-shadow: white 1px 0 10px;
 }
 .hero__description {
   max-width: 56ch;
   font-size: 1.1em;
   font-weight: bold;
+  text-shadow: white 1px 0 10px;
 }
 @media screen and (max-width: 600px) {
   .hero__description {
@@ -242,6 +246,7 @@ img {
 /* layout.piedpage */
 .piedpage {
   text-align: center;
+  padding: 5em 0;
 }
 
 /* Components */
@@ -250,7 +255,7 @@ img {
   display: flex;
   align-items: center;
   border: 1px solid gray;
-  margin: 1em;
+  margin: 0 1em;
 }
 @media screen and (max-width: 600px) {
   .recherche {

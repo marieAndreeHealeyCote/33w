@@ -1,6 +1,6 @@
 /* layout.hero */
 .hero {
-  background-image: url("images/maldives.webp");
+  background-image: url("images/acores-large.webp");
   background-position: top;
   background-size: cover;
   height: 100vh;
@@ -15,13 +15,14 @@
 
   &__titre {
     color: black;
-    text-shadow: seagreen 1px 0 10px;
+    text-shadow: white 1px 0 10px;
   }
 
   &__description {
     max-width: 56ch;
     font-size: 1.1em;
     font-weight: bold;
+    text-shadow: white 1px 0 10px;
     @media screen and (max-width: $point-rupture) {
       max-width: 30ch;
       font-size: 16px;
