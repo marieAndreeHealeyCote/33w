@@ -249,6 +249,11 @@ img {
   padding: 5em 0;
 }
 
+@media screen and (max-width: 600px) {
+  .piedpage {
+    padding: 1em 0;
+  }
+}
 /* Components */
 /* components.recherche */
 .recherche {

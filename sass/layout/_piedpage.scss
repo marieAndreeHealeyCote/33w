@@ -3,3 +3,8 @@
   text-align: center;
   padding: 5em 0;
 }
+@media screen and (max-width: $point-rupture) {
+  .piedpage {
+    padding: 1em 0;
+  }
+}
