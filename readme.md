@@ -1,6 +1,6 @@
 # TP1 site club de voyage
 
-### Première étape du développement d'un thème WP
+### Première et deuxième étapes du développement d'un thème WP
 
 #### Auteur : Marie-Andrée Healey-Côté
 
