@@ -34,5 +34,9 @@
     margin-top: 1em;
     max-width: 30px;
     filter: drop-shadow(0 0 0.1em white);
+
+    &:hover {
+      filter: invert(1);
+    }
   }
 }

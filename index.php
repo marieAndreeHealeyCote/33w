@@ -8,20 +8,22 @@
             le souffle et des aventures sur mesure. Partez à la découverte du
             monde avec nous et créez des souvenirs impérissables.
         </p>
-        <p class="hero__description">info@cmaisonneuve.qc.ca</p>
-        <p class="hero__description">3800, rue Sherbrooke, Montréal</p>
-        <p class="hero__description">514-254-7131</p>
-        <a href="#" class="bouton">S'inscrire</a>
-        <!-- <div>
+        <p class="hero__description">
+            info@cmaisonneuve.qc.ca <br />
+            3800, rue Sherbrooke, Montréal<br />
+            514-254-7131<br /><br />
+            <a href="#" class="bouton">S'inscrire</a>
+        </p>
+        <div>
             <a href="#"><img
                     class="hero__medias-sociaux"
-                    src="images/icone-facebook.png"
+                    src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/05/icone-facebook-3.png"
                     alt="icone-facebook" /></a>
             <a href="#"><img
                     class="hero__medias-sociaux"
-                    src="images/icone-instagram.png"
+                    src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/05/icone-instagram-2.png"
                     alt="icone-instagram" /></a>
-        </div> -->
+        </div>
     </div>
 </section>
 <section class="formulaire">

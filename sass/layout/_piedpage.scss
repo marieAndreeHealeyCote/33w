@@ -1,10 +1,15 @@
 /* layout.piedpage */
 .piedpage {
   text-align: center;
-  padding: 5em 0;
+  margin-top: 2em;
+  padding: 3em 0;
+  background-color: seagreen;
+  text-shadow: white 1px 0 10px;
+  box-shadow: inset 0px 10px 5px -5px rgba(50, 50, 50, 0.75);
 }
 @media screen and (max-width: $point-rupture) {
   .piedpage {
-    padding: 1em 0;
+    margin-top: 0;
+    padding: 1.5em 0;
   }
 }

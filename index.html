@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,13 +17,15 @@
     <header class="entete">
       <div class="entete__contenu">
         <figure class="entete__logo">
-          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="logo soleil" role="presentation" />
         </figure>
         <label for="menu" class="entete__burger">
           <img
             src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000"
             width="32"
             height="32"
+            alt="loupe recherche"
+            role="presentation"
           />
         </label>
         <input type="checkbox" class="menu" id="menu" />
@@ -46,12 +48,18 @@
                   name="recherche"
                   id="recherche"
                   placeholder="Recherche..."
+                  role="searchbox"
+                  aria-label="barre de recherche"
                 />
-                <button class="recherche__bouton">
+                <button
+                  class="recherche__bouton"
+                  title="Rechercher sur le site"
+                >
                   <img
                     src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=000"
                     width="32"
                     height="32"
+                    alt="icone de loupe"
                   />
                 </button>
               </form>
@@ -69,10 +77,12 @@
           le souffle et des aventures sur mesure. Partez à la découverte du
           monde avec nous et créez des souvenirs impérissables.
         </p>
-        <p class="hero__description">info@cmaisonneuve.qc.ca</p>
-        <p class="hero__description">3800, rue Sherbrooke, Montréal</p>
-        <p class="hero__description">514-254-7131</p>
-        <a href="#" class="bouton">S'inscrire</a>
+        <p class="hero__description">
+          info@cmaisonneuve.qc.ca <br />
+          3800, rue Sherbrooke, Montréal<br />
+          514-254-7131<br /><br />
+          <a href="#" class="bouton">S'inscrire</a>
+        </p>
         <div>
           <a href="#"
             ><img
@@ -133,16 +143,51 @@
     <section class="galerie">
       <h2 class="galerie__titre">Nos destinations favorites</h2>
       <div class="galerie__grille">
-        <a href="#"><img src="images/acores.webp" alt="acores" /></a>
-        <a href="#"><img src="images/maldives.webp" alt="maldives" /></a>
-        <a href="#"><img src="images/belize.webp" alt="belize" /></a>
-        <a href="#"><img src="images/seychelles.webp" alt="seychelles" /></a>
-        <a href="#"><img src="images/bora_bora.webp" alt="bora bora" /></a>
-        <a href=""><img src="images/whitsundays.webp" alt="whitsundays" /></a>
-        <a href="#"><img src="images/costa_rica.webp" alt="costarica" /></a>
-        <a href="#"><img src="images/phi_phi.webp" alt="phi phi" /></a>
-        <a href="#"><img src="images/maurice.webp" alt="maurice" /></a>
-        <a href="#"><img src="images/zanzibar.webp" alt="zanzibar" /></a>
+        <a href="#">
+          <img class="galerie__image" src="images/acores.webp" alt="acores" />
+        </a>
+        <a href="#">
+          <img class="galerie__image" src="images/maldives.webp" alt="maldives"
+        /></a>
+        <a href="#"
+          ><img class="galerie__image" src="images/belize.webp" alt="belize"
+        /></a>
+        <a href="#"
+          ><img
+            class="galerie__image"
+            src="images/seychelles.webp"
+            alt="seychelles"
+        /></a>
+        <a href="#"
+          ><img
+            class="galerie__image"
+            src="images/bora_bora.webp"
+            alt="bora bora"
+        /></a>
+        <a href="#"
+          ><img
+            class="galerie__image"
+            src="images/whitsundays.webp"
+            alt="whitsundays"
+        /></a>
+        <a href="#"
+          ><img
+            class="galerie__image"
+            src="images/costa_rica.webp"
+            alt="costarica"
+        /></a>
+        <a href="#"
+          ><img class="galerie__image" src="images/phi_phi.webp" alt="phi phi"
+        /></a>
+        <a href="#"
+          ><img class="galerie__image" src="images/maurice.webp" alt="maurice"
+        /></a>
+        <a href="#"
+          ><img
+            class="galerie__image"
+            src="images/zanzibar.webp"
+            alt="zanzibar"
+        /></a>
       </div>
     </section>
     <footer class="piedpage">© copyright Club de Voyage 2025</footer>

@@ -29,9 +29,9 @@ function ajouter_barre_recherche($items, $args)
 {
     if ($args->menu == 'principal') {
         $items .= '<form class="recherche" action="#">';
-        $items .= '<input class="recherche__input" type="search" name="recherche" id="recherche" placeholder="Recherche..."/>';
-        $items .= '<button class="recherche__bouton">';
-        $items .= '<img src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=000" width="32" height="32" />';
+        $items .= '<input class="recherche__input" type="search" name="recherche" id="recherche" placeholder="Recherche..." role="searchbox" aria-label="barre de recherche" />';
+        $items .= '<button class="recherche__bouton" title="Rechercher sur le site">';
+        $items .= '<img src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=000" width="32" height="32" alt="icone de loupe" role="presentation" />';
         $items .= '</button>';
         $items .= '</form>';
     }
