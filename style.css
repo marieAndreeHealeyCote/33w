@@ -253,26 +253,98 @@ img {
 
 /* layout.piedpage */
 .piedpage {
-  text-align: center;
   margin-top: 2em;
-  padding: 3em 0;
+  padding: 3em;
   background-color: seagreen;
   text-shadow: white 1px 0 10px;
   box-shadow: inset 0px 10px 5px -5px rgba(50, 50, 50, 0.75);
 }
-
+@media screen and (min-width: 600px) {
+  .piedpage__s1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.piedpage__s1__liens__liste {
+  list-style: none;
+  padding-left: 0;
+}
+.piedpage__s1__liens__liste-items {
+  text-decoration: none;
+  color: black;
+}
+.piedpage__s1__liens__liste-items:hover {
+  text-decoration: underline;
+}
+.piedpage__s1__adresse__coord .recherche {
+  margin: 0;
+}
+@media screen and (min-width: 600px) {
+  .piedpage__s1__description {
+    width: 40%;
+  }
+}
+.piedpage__s2 {
+  margin-top: 2em;
+}
+@media screen and (min-width: 600px) {
+  .piedpage__s2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.piedpage__s2__medias-sociaux {
+  display: flex;
+}
+.piedpage__s2__medias-sociaux-items {
+  width: 50%;
+  filter: drop-shadow(0 0 0.1em white);
+}
+.piedpage__s2__medias-sociaux-items:hover {
+  filter: invert(1);
+}
+.piedpage__s2__externe ul {
+  list-style: none;
+  padding-left: 0;
+  gap: 1em;
+}
+@media screen and (min-width: 600px) {
+  .piedpage__s2__externe ul {
+    display: flex;
+    margin: 0;
+  }
+}
+.piedpage__s2__externe-item a {
+  text-decoration: none;
+  color: black;
+}
+.piedpage__s2__externe-item a:hover {
+  text-decoration: underline;
+}
+.piedpage__s3 {
+  margin-top: 2em;
+}
+@media screen and (min-width: 600px) {
+  .piedpage__s3 {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 600px) {
-  .piedpage {
+  .piedpage .piedpage {
     margin-top: 0;
     padding: 1.5em 0;
   }
 }
+
 /* Components */
 /* components.recherche */
 .recherche {
   display: flex;
   align-items: center;
   border: 1px solid gray;
+  background-color: white;
   margin: 0 1em;
 }
 @media screen and (max-width: 600px) {
@@ -283,6 +355,9 @@ img {
 .recherche__input {
   border: none;
   outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 0.5em;
 }
 .recherche__bouton {
   border-left: 1px solid gray;

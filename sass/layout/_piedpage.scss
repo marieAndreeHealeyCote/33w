@@ -1,15 +1,90 @@
 /* layout.piedpage */
 .piedpage {
-  text-align: center;
   margin-top: 2em;
-  padding: 3em 0;
+  padding: 3em;
   background-color: seagreen;
   text-shadow: white 1px 0 10px;
   box-shadow: inset 0px 10px 5px -5px rgba(50, 50, 50, 0.75);
-}
-@media screen and (max-width: $point-rupture) {
-  .piedpage {
-    margin-top: 0;
-    padding: 1.5em 0;
+
+  &__s1 {
+    @media screen and (min-width: $point-rupture) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__s1__liens__liste {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__s1__liens__liste-items {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__s1__adresse__coord .recherche {
+    margin: 0;
+  }
+
+  &__s1__description {
+    @media screen and (min-width: $point-rupture) {
+      width: 40%;
+    }
+  }
+
+  &__s2 {
+    margin-top: 2em;
+
+    @media screen and (min-width: $point-rupture) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__s2__medias-sociaux {
+    display: flex;
+  }
+  &__s2__medias-sociaux-items {
+    width: 50%;
+    filter: drop-shadow(0 0 0.1em white);
+
+    &:hover {
+      filter: invert(1);
+    }
+  }
+  &__s2__externe ul {
+    list-style: none;
+    padding-left: 0;
+    gap: 1em;
+
+    @media screen and (min-width: $point-rupture) {
+      display: flex;
+      margin: 0;
+    }
+  }
+  &__s2__externe-item a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__s3 {
+    margin-top: 2em;
+    @media screen and (min-width: $point-rupture) {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: $point-rupture) {
+    .piedpage {
+      margin-top: 0;
+      padding: 1.5em 0;
+    }
   }
 }
