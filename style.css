@@ -203,7 +203,7 @@ img {
   gap: 1em;
   align-items: flex-end;
 }
-.formulaire__contenu input[type=submit] {
+.formulaire__contenu input[type="submit"] {
   border: 1px solid seagreen;
   background-color: white;
   padding: 0.75em 3.15em;
@@ -211,7 +211,7 @@ img {
   font-size: 16px;
   text-transform: uppercase;
 }
-.formulaire__contenu input[type=submit]:hover {
+.formulaire__contenu input[type="submit"]:hover {
   background-color: seagreen;
   color: white;
   cursor: pointer;
@@ -408,4 +408,4 @@ img {
     flex-direction: column;
     align-items: center;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
