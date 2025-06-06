@@ -25,6 +25,7 @@ function theme_tp_enqueue_styles()
 }
 add_action('wp_enqueue_scripts', 'theme_tp_enqueue_styles');
 
+// Permet d'ajouter la barre de recherche
 function ajouter_barre_recherche($items, $args)
 {
     if ($args->menu == 'principal') {
@@ -39,6 +40,7 @@ function ajouter_barre_recherche($items, $args)
 }
 add_filter('wp_nav_menu_items', 'ajouter_barre_recherche', 10, 2);
 
+// Permet d'ajouter une classe sur l'élément 'li'
 function ajouter_class_sur_li($classes, $item, $args)
 {
     if (isset($args->custom_li_class)) {
@@ -47,3 +49,14 @@ function ajouter_class_sur_li($classes, $item, $args)
     return $classes;
 }
 add_filter('nav_menu_css_class', 'ajouter_class_sur_li', 1, 3);
+
+// Permet de d'afficher une catégorie de post et classer par ordre ascendant
+function modifie_requete_principal($query)
+{
+    if ($query->is_home() && $query->is_main_query() && ! is_admin()) {
+        $query->set('category_name', 'Aventure');
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+    }
+}
+add_action('pre_get_posts', 'modifie_requete_principal');
