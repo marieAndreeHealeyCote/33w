@@ -1,12 +1,11 @@
 <?php
-
 /*
- * Le modèle index
- * Représente le modèle par défaut
+ * Le modèle category
+ * Représente le modèle category 
  */
 ?>
 <?php get_header() ?>
-<h1>trace seulement à retirer------------------ Index-page.php -----------------------</h1>
+<h1>trace seulement à retirer------------------ Category.php -----------------------</h1>
 <section class="populaire">
     <?php if (have_posts()) {
         while (have_posts()) {

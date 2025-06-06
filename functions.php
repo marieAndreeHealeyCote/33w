@@ -50,11 +50,11 @@ function ajouter_class_sur_li($classes, $item, $args)
 }
 add_filter('nav_menu_css_class', 'ajouter_class_sur_li', 1, 3);
 
-// Permet de d'afficher une catégorie de post et classer par ordre ascendant
+// Permet de modifier la requête principale et filtrer la requête de la page d'accueil
 function modifie_requete_principal($query)
 {
     if ($query->is_home() && $query->is_main_query() && ! is_admin()) {
-        $query->set('category_name', 'Aventure');
+        $query->set('category_name', 'Populaire');
         $query->set('orderby', 'title');
         $query->set('order', 'ASC');
     }

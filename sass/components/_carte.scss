@@ -1,0 +1,8 @@
+.populaire {
+  display: flexbox;
+  &__carte {
+    display: flex;
+    flex-direction: column;
+    flex: 200px;
+  }
+}
