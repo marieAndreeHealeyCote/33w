@@ -89,7 +89,7 @@
                 <?php
                 // Cette fonction permet d'afficher l'ensemble du contenu du post (article ou page)
                 // the_content();
-                $lien = '<a href="' . get_permalink() . '">Suite</a>';
+                $lien = ' [...] <a href="' . get_permalink() . '">Suite</a>';
                 echo wp_trim_words(get_the_excerpt(), 10, $lien);
                 ?>
             </article>

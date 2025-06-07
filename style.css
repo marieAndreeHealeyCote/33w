@@ -365,6 +365,7 @@ img {
 
 .populaire {
   display: flexbox;
+  padding: 0 25%;
 }
 .populaire__carte {
   display: flex;
