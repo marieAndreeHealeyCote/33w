@@ -77,7 +77,7 @@
             <div>© Copyright Club de Voyage 2025</div>
         </section>
     </footer>
-    <script src="scripts/checkbox.js"></script>
+    <!-- <script src="scripts/checkbox.js"></script> -->
     <?php wp_footer() ?>
     </body>
 

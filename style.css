@@ -383,6 +383,9 @@ img {
   border: 1px solid seagreen;
   padding: 10px;
 }
+.conteneur_galerie {
+  flex: 1;
+}
 
 /* components.bouton */
 .bouton {

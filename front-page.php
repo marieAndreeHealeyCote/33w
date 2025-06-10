@@ -76,27 +76,13 @@
             while (have_posts()) {
                 the_post();
         ?>
-                <article class="conteneur__carte">
-                    <?php
-                    // affiche l'image "mise en avant" miniature
-                    the_post_thumbnail('thumbnail');
-                    ?>
-                    <h2>
-                        <?php
-                        // affiche le titre principal du "post"
-                        the_title();
-                        ?>
-                    </h2>
-                    <p>
-                        <?php
-                        // Cette fonction permet d'afficher l'ensemble du contenu du post (article ou page)
-                        // the_content();
-                        $lien = ' [...] <a href="' . get_permalink() . '">Suite</a>';
-                        echo wp_trim_words(get_the_excerpt(), 10, $lien);
-                        ?>
-                    </p>
-                </article>
         <?php
+                // Cette fonction renvoie true si l’article en cours appartient à la catégorie spécifiée, ou à l’une de ses sous-catégories.
+                if (in_category('galerie')) {
+                    get_template_part("templates/galerie");
+                } else {
+                    get_template_part("templates/carte");
+                }
             }
         } ?>
     </div>

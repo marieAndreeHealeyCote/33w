@@ -18,12 +18,14 @@ function mon_theme_supports()
 add_action('after_setup_theme', 'mon_theme_supports');
 
 // Gestion des scripts et styles
-function theme_tp_enqueue_styles()
+function theme_tp_enqueue_styles_and_scripts()
 {
-    wp_enqueue_style('normalize', get_template_directory_uri() . 'normalize.css');
+    wp_enqueue_style('normalize', get_template_directory_uri() . '/normalize.css');
     wp_enqueue_style('main-style', get_stylesheet_uri());
+    wp_enqueue_script('checkbox', get_stylesheet_directory_uri() . '/scripts/checkbox.js', [], false, ['in_footer' => true]);
 }
-add_action('wp_enqueue_scripts', 'theme_tp_enqueue_styles');
+add_action('wp_enqueue_scripts', 'theme_tp_enqueue_styles_and_scripts');
+
 
 // Permet d'ajouter la barre de recherche
 function ajouter_barre_recherche($items, $args)
