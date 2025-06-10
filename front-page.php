@@ -5,7 +5,7 @@
 */
 ?>
 <?php get_header() ?>
-<!-- <h1>trace seulement à retirer------------------ Front-page.php -----------------------</h1> -->
+<h1>trace seulement à retirer------------------ Front-page.php -----------------------</h1>
 <section class="hero">
     <div class="hero__contenu">
         <h1 class="hero__titre">Voyagez avec Club Voyage !</h1>
@@ -71,31 +71,34 @@
     </form>
 </section>
 <section class="populaire">
-    <?php if (have_posts()) {
-        while (have_posts()) {
-            the_post();
-    ?>
-            <article class="populaire__carte">
-                <?php
-                // affiche l'image "mise en avant" miniature
-                the_post_thumbnail('thumbnail');
-                ?>
-                <h1>
+    <div class="conteneur global">
+        <?php if (have_posts()) {
+            while (have_posts()) {
+                the_post();
+        ?>
+                <article class="conteneur__carte">
                     <?php
-                    // affiche le titre principal du "post"
-                    the_title();
+                    // affiche l'image "mise en avant" miniature
+                    the_post_thumbnail('thumbnail');
                     ?>
-                </h1>
-                <?php
-                // Cette fonction permet d'afficher l'ensemble du contenu du post (article ou page)
-                // the_content();
-                $lien = ' [...] <a href="' . get_permalink() . '">Suite</a>';
-                echo wp_trim_words(get_the_excerpt(), 10, $lien);
-                ?>
-            </article>
-    <?php
-        }
-    } ?>
-
+                    <h2>
+                        <?php
+                        // affiche le titre principal du "post"
+                        the_title();
+                        ?>
+                    </h2>
+                    <p>
+                        <?php
+                        // Cette fonction permet d'afficher l'ensemble du contenu du post (article ou page)
+                        // the_content();
+                        $lien = ' [...] <a href="' . get_permalink() . '">Suite</a>';
+                        echo wp_trim_words(get_the_excerpt(), 10, $lien);
+                        ?>
+                    </p>
+                </article>
+        <?php
+            }
+        } ?>
+    </div>
 </section>
 <?php get_footer(); ?>

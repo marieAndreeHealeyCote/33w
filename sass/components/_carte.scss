@@ -1,9 +1,14 @@
-.populaire {
-  display: flexbox;
-  padding: 0 25%;
+.conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  // padding: 0 25%;
   &__carte {
     display: flex;
     flex-direction: column;
-    flex: 200px;
+    flex: 1 0 300px;
+    justify-content: space-between;
+    border: 1px solid seagreen;
+    padding: 10px;
   }
 }
