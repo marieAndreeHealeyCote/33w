@@ -73,6 +73,10 @@
     &:hover {
       text-decoration: underline;
     }
+    &:active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
   }
   &__s3 {
     margin-top: 2em;

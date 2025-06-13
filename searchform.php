@@ -6,14 +6,15 @@
  */
 ?>
 <form class="recherche" action="<?php echo esc_url(home_url('/')); ?>">
-    <label for="">
-        <input
-            class="recherche__input"
-            type="search"
-            name="s"
-            placeholder="Recherche..."
-            value="<?php echo get_search_query(); ?>" />
-    </label>
+    <input
+        class="recherche__input"
+        type="search"
+        name="s"
+        id="recherche"
+        placeholder="Recherche..."
+        value="<?php echo get_search_query(); ?>"
+        role="searchbox"
+        aria-label="barre de recherche" />
     <button
         class="recherche__bouton"
         title="Rechercher sur le site"

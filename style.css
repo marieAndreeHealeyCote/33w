@@ -76,7 +76,7 @@ body {
 }
 
 img {
-  display: block;
+  display: inline-block;
   max-width: 100%;
 }
 
@@ -150,10 +150,14 @@ img {
 .entete__menu-item a:hover {
   text-decoration: underline;
 }
+.entete__menu-item a:active {
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 /* layout.hero */
 .hero {
-  background-image: url("images/acores-large.webp");
+  background-image: url("images/nil-assouan-large.webp");
   background-position: top;
   background-size: cover;
   height: 100vh;
@@ -167,6 +171,13 @@ img {
   .hero {
     padding: 0 2em;
   }
+}
+.hero__contenu {
+  background-color: rgba(255, 255, 255, 0.665);
+  width: fit-content;
+  padding: 2em;
+  border: 1px solid seashell;
+  border-radius: 30px;
 }
 .hero__titre {
   color: black;
@@ -266,6 +277,21 @@ img {
 .populaire {
   margin-top: 2em;
 }
+.populaire__404 {
+  text-align: center;
+}
+.populaire__404 img {
+  display: inline-block;
+}
+.populaire__category {
+  margin: 0 3em;
+  max-width: var(600px);
+}
+.populaire__single {
+  margin: 0 3em;
+  max-width: var(600px);
+  text-align: center;
+}
 
 /* layout.piedpage */
 .piedpage {
@@ -339,6 +365,10 @@ img {
 .piedpage__s2__externe-item a:hover {
   text-decoration: underline;
 }
+.piedpage__s2__externe-item a:active {
+  text-decoration: underline;
+  font-weight: bold;
+}
 .piedpage__s3 {
   margin-top: 2em;
 }
@@ -391,6 +421,7 @@ img {
   justify-content: space-between;
   border: 1px solid seagreen;
   padding: 10px;
+  align-items: center;
 }
 .conteneur_galerie {
   flex: 1;

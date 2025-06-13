@@ -6,9 +6,11 @@
  */
 ?>
 <?php get_header() ?>
-<h1>trace seulement à retirer------------------ 404-page.php -----------------------</h1>
 <section class="populaire">
-    <h1>Erreur 404</h1>
-    <h2>L'adresse que vous demandez n'existe pas</h2>
+    <div class="populaire__404">
+        <h1>Erreur 404</h1>
+        <h2>L'adresse que vous demandez n'existe pas</h2>
+        <img src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/404-error.webp" alt="404 error">
+    </div>
 </section>
 <?php get_footer(); ?>

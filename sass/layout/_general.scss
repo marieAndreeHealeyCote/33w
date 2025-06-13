@@ -26,10 +26,10 @@ body {
 }
 
 img {
-  display: block;
+  display: inline-block;
   max-width: 100%;
 }
-// Classe créée en classe mais n'a jamais été utilisée
+
 .global {
   padding: 0;
   box-sizing: border-box;

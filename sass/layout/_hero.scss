@@ -1,6 +1,6 @@
 /* layout.hero */
 .hero {
-  background-image: url("images/acores-large.webp");
+  background-image: url("images/nil-assouan-large.webp");
   background-position: top;
   background-size: cover;
   height: 100vh;
@@ -11,6 +11,14 @@
   justify-content: space-around;
   @media screen and (max-width: $point-rupture) {
     padding: 0 2em;
+  }
+
+  &__contenu {
+    background-color: rgba(255, 255, 255, 0.665);
+    width: fit-content;
+    padding: 2em;
+    border: 1px solid seashell;
+    border-radius: 30px;
   }
 
   &__titre {

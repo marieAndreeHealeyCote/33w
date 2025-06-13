@@ -24,23 +24,7 @@
                         3800, rue Sherbrooke, Montréal, Québec, Canada, H1X 2A2 <br />
                         514-254-7131
                     </p>
-                    <form class="recherche" action="#">
-                        <input
-                            class="recherche__input"
-                            type="search"
-                            name="recherche"
-                            id="recherche"
-                            placeholder="Recherche..."
-                            role="searchbox"
-                            aria-label="barre de recherche" />
-                        <button class="recherche__bouton" title="Rechercher sur le site">
-                            <img
-                                src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=000"
-                                width="32"
-                                height="32"
-                                alt="icone de loupe" />
-                        </button>
-                    </form>
+                    <?php get_search_form() ?>
                 </div>
             </div>
             <div class="piedpage__s1__description">
@@ -56,14 +40,23 @@
         </section>
         <section class="piedpage__s2">
             <div class="piedpage__s2__medias-sociaux">
-                <a href="https://www.facebook.com"><img
+                <a href="https://www.facebook.com" target="_blank"><img
                         class="piedpage__s2__medias-sociaux-items"
                         src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/05/icone-facebook-3.png"
                         alt="icone-facebook" /></a>
-                <a href="https://www.instagram.com/"><img
+                <a href="https://www.instagram.com/" target="_blank"><img
                         class="piedpage__s2__medias-sociaux-items"
                         src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/05/icone-instagram-2.png"
                         alt="icone-instagram" /></a>
+                <a href="https://x.com/" target="_blank"><img
+                        class="piedpage__s2__medias-sociaux-items"
+                        src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/icone-twitter.png" alt="icone twitter" /></a>
+                <a href="https://www.airbnb.ca" target="_blank"><img
+                        class="piedpage__s2__medias-sociaux-items"
+                        src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/airbnb.png" alt="icone airbnb" /></a>
+                <a href="https://github.com/marieAndreeHealeyCote/33w" target="_blank"><img
+                        class="piedpage__s2__medias-sociaux-items"
+                        src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/github-icon.png" alt="icone github" /></a>
             </div>
             <div class="piedpage__s2__externe">
                 <?php wp_nav_menu(array(
