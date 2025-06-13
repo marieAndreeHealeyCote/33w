@@ -16,7 +16,7 @@
                     <article class="conteneur__carte">
                         <?php
                         // affiche l'image "mise en avant" miniature
-                        the_post_thumbnail('thumbnail');
+                        the_post_thumbnail('miniature');
                         ?>
                         <h2>
                             <?php

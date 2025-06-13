@@ -18,29 +18,35 @@ function mon_theme_supports()
 add_action('after_setup_theme', 'mon_theme_supports');
 
 // Gestion des scripts et styles
-function theme_tp_enqueue_styles_and_scripts()
+function charger_scripts_et_styles()
 {
     wp_enqueue_style('normalize', get_template_directory_uri() . '/normalize.css');
-    wp_enqueue_style('main-style', get_stylesheet_uri());
-    wp_enqueue_script('checkbox', get_stylesheet_directory_uri() . '/scripts/checkbox.js', [], false, ['in_footer' => true]);
-}
-add_action('wp_enqueue_scripts', 'theme_tp_enqueue_styles_and_scripts');
 
+    // Ajouter un style
+    $css_path = get_template_directory() . '/style.css';
+    $css_url  = get_template_directory_uri() . '/style.css';
 
-// Permet d'ajouter la barre de recherche
-function ajouter_barre_recherche($items, $args)
-{
-    if ($args->menu == 'principal') {
-        $items .= '<form class="recherche" action="#">';
-        $items .= '<input class="recherche__input" type="search" name="recherche" id="recherche" placeholder="Recherche..." role="searchbox" aria-label="barre de recherche" />';
-        $items .= '<button class="recherche__bouton" title="Rechercher sur le site">';
-        $items .= '<img src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=000" width="32" height="32" alt="icone de loupe" role="presentation" />';
-        $items .= '</button>';
-        $items .= '</form>';
-    }
-    return $items;
+    wp_enqueue_style(
+        'main-style',
+        $css_url,
+        array(),
+        filemtime($css_path),
+        null
+    );
+
+    // Ajouter un script
+    $script_path = get_template_directory() . '/scripts/checkbox.js';
+    $script_url  = get_template_directory_uri() . '/scripts/checkbox.js';
+
+    wp_enqueue_script(
+        'checkbox',
+        $script_url,
+        array(),
+        filemtime($script_path),
+        true
+    );
 }
-add_filter('wp_nav_menu_items', 'ajouter_barre_recherche', 10, 2);
+add_action('wp_enqueue_scripts', 'charger_scripts_et_styles');
 
 // Permet d'ajouter une classe sur l'élément 'li'
 function ajouter_class_sur_li($classes, $item, $args)

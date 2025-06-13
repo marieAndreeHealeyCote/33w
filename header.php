@@ -16,8 +16,9 @@
 <body>
     <header class="entete">
         <div class="entete__contenu">
-            <figure class="entete__logo"><?php echo get_custom_logo(); ?></figure>
-            <!-- <img src="images/logo.png" alt="" class="entete__logo" /> -->
+            <figure class="entete__logo">
+                <?= get_custom_logo(); ?>
+            </figure>
             <label for="menu" class="entete__burger">
                 <img
                     src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000"
@@ -34,6 +35,7 @@
                     'menu_class' => 'entete__menu',
                     'custom_li_class'  => 'entete__menu-item'
                 )); ?>
+                <?php get_search_form() ?>
             </nav>
         </div>
     </header>
