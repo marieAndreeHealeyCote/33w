@@ -22,11 +22,11 @@
             <a href="#" class="bouton">S'inscrire</a>
         </p>
         <div>
-            <a href="#"><img
+            <a href="https://www.facebook.com" target="_blank"><img
                     class="hero__medias-sociaux"
                     src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/05/icone-facebook-3.png"
                     alt="icone-facebook" /></a>
-            <a href="#"><img
+            <a href="https://www.instagram.com/" target="_blank"><img
                     class="hero__medias-sociaux"
                     src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/05/icone-instagram-2.png"
                     alt="icone-instagram" /></a>

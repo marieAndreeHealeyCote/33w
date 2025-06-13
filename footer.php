@@ -4,16 +4,16 @@
                 <h2>Liens sur le voyage</h2>
                 <ul class="piedpage__s1__liens__liste">
                     <li>
-                        <a class="piedpage__s1__liens__liste-items" href="#">Air Transat</a>
+                        <a class="piedpage__s1__liens__liste-items" href="https://www.airtransat.com/fr-CA" target="_blank">Air Transat</a>
                     </li>
                     <li>
-                        <a class="piedpage__s1__liens__liste-items" href="#">Air Canada</a>
+                        <a class="piedpage__s1__liens__liste-items" href="https://www.aircanada.com" target="_blank">Air Canada</a>
                     </li>
                     <li>
-                        <a class="piedpage__s1__liens__liste-items" href="#">Expedia.ca</a>
+                        <a class="piedpage__s1__liens__liste-items" href="https://www.expedia.ca" target="_blank">Expedia.ca</a>
                     </li>
                     <li>
-                        <a class="piedpage__s1__liens__liste-items" href="#">Tripadvisor</a>
+                        <a class="piedpage__s1__liens__liste-items" href="https://www.tripadvisor.ca/" target="_blank">Tripadvisor</a>
                     </li>
                 </ul>
             </div>
@@ -56,11 +56,11 @@
         </section>
         <section class="piedpage__s2">
             <div class="piedpage__s2__medias-sociaux">
-                <a href="#"><img
+                <a href="https://www.facebook.com"><img
                         class="piedpage__s2__medias-sociaux-items"
                         src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/05/icone-facebook-3.png"
                         alt="icone-facebook" /></a>
-                <a href="#"><img
+                <a href="https://www.instagram.com/"><img
                         class="piedpage__s2__medias-sociaux-items"
                         src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/05/icone-instagram-2.png"
                         alt="icone-instagram" /></a>

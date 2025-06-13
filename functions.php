@@ -6,11 +6,12 @@ remove_action('shutdown', 'wp_ob_end_flush_all', 1);
 function mon_theme_supports()
 {
     add_theme_support('post-thumbnails');
+    add_image_size('miniature', 75, 75, true); // Taille carrée
     add_theme_support('title-tag');
     add_theme_support('menus');
     add_theme_support('custom-logo', array(
-        'height'      => 150,
-        'width'       => 150,
+        'height'      => 75,
+        'width'       => 75,
         'flex-height' => true,
         'flex-width'  => true,
     ));
