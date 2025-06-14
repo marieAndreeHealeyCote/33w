@@ -50,7 +50,8 @@
                         alt="icone-instagram" /></a>
                 <a href="https://x.com/" target="_blank"><img
                         class="piedpage__s2__medias-sociaux-items"
-                        src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/icone-twitter.png" alt="icone twitter" /></a>
+                        src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/iconetwitter.png"
+                        alt="icone twitter" /></a>
                 <a href="https://www.airbnb.ca" target="_blank"><img
                         class="piedpage__s2__medias-sociaux-items"
                         src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/airbnb.png" alt="icone airbnb" /></a>

@@ -6,7 +6,6 @@
  */
 ?>
 <?php get_header() ?>
-<h1>trace seulement à retirer------------------ search.php -----------------------</h1>
 <section class="populaire">
     <?php if (have_posts()) {
         while (have_posts()) {

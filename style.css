@@ -140,6 +140,10 @@ img {
   gap: 1rem;
   padding: 0;
 }
+.entete__menu-item.current-menu-item a {
+  text-decoration: underline;
+  font-weight: bold;
+}
 .entete__menu-item a {
   display: block;
   background-color: white;
@@ -149,10 +153,6 @@ img {
 }
 .entete__menu-item a:hover {
   text-decoration: underline;
-}
-.entete__menu-item a:active {
-  text-decoration: underline;
-  font-weight: bold;
 }
 
 /* layout.hero */

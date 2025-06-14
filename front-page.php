@@ -7,9 +7,9 @@
 <?php get_header() ?>
 <section class="hero">
     <div class="hero__contenu">
-        <h1 class="hero__titre">Voyagez avec Club Voyage !</h1>
+        <h1 class="hero__titre">Voyagez avec <br> Summer Holiday !</h1>
         <p class="hero__description">
-            Découvrez des destinations uniques et inoubliables avec Club Voyage.
+            Découvrez des destinations uniques et inoubliables avec Summer Holiday.
             Nous vous offrons des expériences authentiques, des paysages à couper
             le souffle et des aventures sur mesure. Partez à la découverte du
             monde avec nous et créez des souvenirs impérissables.
@@ -29,6 +29,10 @@
                     class="hero__medias-sociaux"
                     src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/05/icone-instagram-2.png"
                     alt="icone-instagram" /></a>
+            <a href="https://x.com/" target="_blank"><img
+                    class="hero__medias-sociaux"
+                    src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/iconetwitter.png"
+                    alt="icone twitter" /></a>
         </div>
     </div>
 </section>
