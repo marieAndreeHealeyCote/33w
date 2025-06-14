@@ -3,7 +3,8 @@
   margin-top: 2em;
   padding: 3em;
   background-color: seagreen;
-  text-shadow: white 1px 0 10px;
+  color: white;
+  text-shadow: black 1px 0 10px;
   box-shadow: inset 0px 10px 5px -5px rgba(50, 50, 50, 0.75);
 
   &__s1 {
@@ -20,7 +21,7 @@
 
   &__s1__liens__liste-items {
     text-decoration: none;
-    color: black;
+    color: white;
 
     &:hover {
       text-decoration: underline;
@@ -68,7 +69,7 @@
   }
   &__s2__externe-item a {
     text-decoration: none;
-    color: black;
+    color: white;
 
     &:hover {
       text-decoration: underline;

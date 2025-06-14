@@ -12,7 +12,7 @@
             while (have_posts()) {
                 the_post();
                 // affiche l'image "mise en avant" miniature
-                the_post_thumbnail('large');
+                the_post_thumbnail('medium_large');
         ?>
                 <!-- affiche le titre principal du "post" -->
                 <h1><?php the_title(); ?></h1>

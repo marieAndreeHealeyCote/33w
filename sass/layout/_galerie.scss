@@ -83,5 +83,14 @@
     margin: 0 3em;
     max-width: var($point-rupture);
     text-align: center;
+
+    @media screen and (max-width: $point-rupture) {
+      .attachment-large {
+        width: auto;
+      }
+    }
+    .wp-block-gallery {
+      margin-top: 3em;
+    }
   }
 }

@@ -328,13 +328,22 @@ img {
   max-width: var(600px);
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .populaire__single .attachment-large {
+    width: auto;
+  }
+}
+.populaire__single .wp-block-gallery {
+  margin-top: 3em;
+}
 
 /* layout.piedpage */
 .piedpage {
   margin-top: 2em;
   padding: 3em;
   background-color: seagreen;
-  text-shadow: white 1px 0 10px;
+  color: white;
+  text-shadow: black 1px 0 10px;
   box-shadow: inset 0px 10px 5px -5px rgba(50, 50, 50, 0.75);
 }
 @media screen and (min-width: 600px) {
@@ -350,7 +359,7 @@ img {
 }
 .piedpage__s1__liens__liste-items {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .piedpage__s1__liens__liste-items:hover {
   text-decoration: underline;
@@ -396,7 +405,7 @@ img {
 }
 .piedpage__s2__externe-item a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .piedpage__s2__externe-item a:hover {
   text-decoration: underline;
