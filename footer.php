@@ -57,7 +57,7 @@
                         src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/airbnb.png" alt="icone airbnb" /></a>
                 <a href="https://github.com/marieAndreeHealeyCote/33w" target="_blank"><img
                         class="piedpage__s2__medias-sociaux-items"
-                        src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/github-icon.png" alt="icone github" /></a>
+                        src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/githubicon.png" alt="icone github" /></a>
             </div>
             <div class="piedpage__s2__externe">
                 <?php wp_nav_menu(array(

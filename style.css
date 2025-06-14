@@ -426,6 +426,9 @@ img {
 .conteneur_galerie {
   flex: 1;
 }
+.conteneur h2 {
+  height: 2em;
+}
 
 /* components.bouton */
 .bouton {
