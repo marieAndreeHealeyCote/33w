@@ -268,17 +268,21 @@ img {
     margin-top: 1em;
   }
 }
-.galerie__image:hover {
-  transform: scale(1.05);
-  transition: all 0.5s ease-out;
-  box-shadow: 0 0 10px black;
+@media screen and (min-width: 600px) {
+  .galerie__image:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-out;
+    box-shadow: 0 0 10px black;
+  }
 }
 
-.conteneur__galerie .wp-block-image img:hover {
-  transform: scale(1.05);
-  transition: all 0.5s ease-out;
-  box-shadow: 0 0 10px black;
-  cursor: pointer;
+@media screen and (min-width: 600px) {
+  .conteneur__galerie .wp-block-image img:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-out;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+  }
 }
 
 .populaire {
@@ -304,10 +308,12 @@ img {
   border-radius: 30px;
   background-color: rgba(51, 130, 98, 0.3);
 }
-.populaire__category__contenu:hover {
-  transform: scale(1.05);
-  transition: all 0.5s ease-out;
-  box-shadow: 0 0 10px black;
+@media screen and (min-width: 600px) {
+  .populaire__category__contenu:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-out;
+    box-shadow: 0 0 10px black;
+  }
 }
 .populaire__category__titre {
   filter: drop-shadow(0 0 0.1em white);
@@ -482,10 +488,12 @@ img {
   align-items: center;
   background-color: rgba(51, 130, 98, 0.3);
 }
-.conteneur__carte:hover {
-  transform: scale(1.05);
-  transition: all 0.5s ease-out;
-  box-shadow: 0 0 10px black;
+@media screen and (min-width: 600px) {
+  .conteneur__carte:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-out;
+    box-shadow: 0 0 10px black;
+  }
 }
 .conteneur__carte a {
   color: seagreen;

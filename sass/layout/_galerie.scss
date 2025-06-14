@@ -20,19 +20,23 @@
     }
   }
 
-  &__image:hover {
-    transform: scale(1.05);
-    transition: all 0.5s ease-out;
-    box-shadow: 0 0 10px black;
+  @media screen and (min-width: $point-rupture) {
+    &__image:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease-out;
+      box-shadow: 0 0 10px black;
+    }
   }
 }
 
 .conteneur__galerie {
-  .wp-block-image img:hover {
-    transform: scale(1.05);
-    transition: all 0.5s ease-out;
-    box-shadow: 0 0 10px black;
-    cursor: pointer;
+  @media screen and (min-width: $point-rupture) {
+    .wp-block-image img:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease-out;
+      box-shadow: 0 0 10px black;
+      cursor: pointer;
+    }
   }
 }
 
@@ -59,10 +63,12 @@
       border-radius: 30px;
       background-color: rgba(51, 130, 98, 0.3);
 
-      &:hover {
-        transform: scale(1.05);
-        transition: all 0.5s ease-out;
-        box-shadow: 0 0 10px black;
+      @media screen and (min-width: $point-rupture) {
+        &:hover {
+          transform: scale(1.05);
+          transition: all 0.5s ease-out;
+          box-shadow: 0 0 10px black;
+        }
       }
     }
     &__titre {

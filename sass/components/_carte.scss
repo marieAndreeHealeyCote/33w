@@ -13,10 +13,12 @@
     align-items: center;
     background-color: rgba(51, 130, 98, 0.3);
 
-    &:hover {
-      transform: scale(1.05);
-      transition: all 0.5s ease-out;
-      box-shadow: 0 0 10px black;
+    @media screen and (min-width: $point-rupture) {
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.5s ease-out;
+        box-shadow: 0 0 10px black;
+      }
     }
 
     a {
