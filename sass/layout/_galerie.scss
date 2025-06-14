@@ -27,6 +27,15 @@
   }
 }
 
+.conteneur__galerie {
+  .wp-block-image img:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-out;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+  }
+}
+
 .populaire {
   margin-top: 2em;
   &__404 {
@@ -38,6 +47,37 @@
   &__category {
     margin: 0 3em;
     max-width: var($point-rupture);
+
+    &__contenu {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      gap: 3em;
+
+      border: 1px solid seagreen;
+      border-radius: 30px;
+      background-color: rgba(51, 130, 98, 0.3);
+    }
+    &__titre {
+      filter: drop-shadow(0 0 0.1em white);
+      h2 {
+        margin-top: 0;
+      }
+      a {
+        color: seagreen;
+        &:hover {
+          background-color: seagreen;
+          color: white;
+        }
+      }
+    }
+    &__image {
+      width: 150px;
+    }
+    img {
+      max-width: unset;
+    }
   }
   &__single {
     margin: 0 3em;
@@ -45,6 +85,3 @@
     text-align: center;
   }
 }
-// border: 1px solid seagreen;
-// border-radius: 30%;
-// background-color: rgba(108, 182, 150, 0.662);

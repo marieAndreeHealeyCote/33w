@@ -11,6 +11,21 @@
     border: 1px solid seagreen;
     padding: 10px;
     align-items: center;
+    background-color: rgba(51, 130, 98, 0.3);
+
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease-out;
+      box-shadow: 0 0 10px black;
+    }
+
+    a {
+      color: seagreen;
+    }
+  }
+  &__carte a:hover {
+    background-color: seagreen;
+    color: white;
   }
   &_galerie {
     flex: 1;

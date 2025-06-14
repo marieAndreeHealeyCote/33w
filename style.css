@@ -274,6 +274,13 @@ img {
   box-shadow: 0 0 10px black;
 }
 
+.conteneur__galerie .wp-block-image img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-out;
+  box-shadow: 0 0 10px black;
+  cursor: pointer;
+}
+
 .populaire {
   margin-top: 2em;
 }
@@ -286,6 +293,35 @@ img {
 .populaire__category {
   margin: 0 3em;
   max-width: var(600px);
+}
+.populaire__category__contenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  gap: 3em;
+  border: 1px solid seagreen;
+  border-radius: 30px;
+  background-color: rgba(51, 130, 98, 0.3);
+}
+.populaire__category__titre {
+  filter: drop-shadow(0 0 0.1em white);
+}
+.populaire__category__titre h2 {
+  margin-top: 0;
+}
+.populaire__category__titre a {
+  color: seagreen;
+}
+.populaire__category__titre a:hover {
+  background-color: seagreen;
+  color: white;
+}
+.populaire__category__image {
+  width: 150px;
+}
+.populaire__category img {
+  max-width: unset;
 }
 .populaire__single {
   margin: 0 3em;
@@ -422,6 +458,19 @@ img {
   border: 1px solid seagreen;
   padding: 10px;
   align-items: center;
+  background-color: rgba(51, 130, 98, 0.3);
+}
+.conteneur__carte:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-out;
+  box-shadow: 0 0 10px black;
+}
+.conteneur__carte a {
+  color: seagreen;
+}
+.conteneur__carte a:hover {
+  background-color: seagreen;
+  color: white;
 }
 .conteneur_galerie {
   flex: 1;
