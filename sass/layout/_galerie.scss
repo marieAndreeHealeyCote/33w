@@ -86,12 +86,11 @@
     }
   }
   &__single {
-    margin: 0;
+    margin: 0 3em;
     max-width: var($point-rupture);
     text-align: center;
 
     @media screen and (max-width: $point-rupture) {
-      margin: 0 3em;
       .attachment-large {
         width: auto;
       }
