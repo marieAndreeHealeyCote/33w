@@ -58,6 +58,12 @@
       border: 1px solid seagreen;
       border-radius: 30px;
       background-color: rgba(51, 130, 98, 0.3);
+
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.5s ease-out;
+        box-shadow: 0 0 10px black;
+      }
     }
     &__titre {
       filter: drop-shadow(0 0 0.1em white);
@@ -80,17 +86,25 @@
     }
   }
   &__single {
-    margin: 0 3em;
+    margin: 0;
     max-width: var($point-rupture);
     text-align: center;
 
     @media screen and (max-width: $point-rupture) {
+      margin: 0 3em;
       .attachment-large {
         width: auto;
       }
     }
     .wp-block-gallery {
       margin-top: 3em;
+    }
+    .wp-block-image:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease-out;
+      box-shadow: 0 0 10px black;
+
+      cursor: pointer;
     }
   }
 }

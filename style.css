@@ -304,6 +304,11 @@ img {
   border-radius: 30px;
   background-color: rgba(51, 130, 98, 0.3);
 }
+.populaire__category__contenu:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-out;
+  box-shadow: 0 0 10px black;
+}
 .populaire__category__titre {
   filter: drop-shadow(0 0 0.1em white);
 }
@@ -324,17 +329,26 @@ img {
   max-width: unset;
 }
 .populaire__single {
-  margin: 0 3em;
+  margin: 0;
   max-width: var(600px);
   text-align: center;
 }
 @media screen and (max-width: 600px) {
+  .populaire__single {
+    margin: 0 3em;
+  }
   .populaire__single .attachment-large {
     width: auto;
   }
 }
 .populaire__single .wp-block-gallery {
   margin-top: 3em;
+}
+.populaire__single .wp-block-image:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-out;
+  box-shadow: 0 0 10px black;
+  cursor: pointer;
 }
 
 /* layout.piedpage */
