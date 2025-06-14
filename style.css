@@ -341,11 +341,13 @@ img {
 .populaire__single .wp-block-gallery {
   margin-top: 3em;
 }
-.populaire__single .wp-block-image:hover {
-  transform: scale(1.05);
-  transition: all 0.5s ease-out;
-  box-shadow: 0 0 10px black;
-  cursor: pointer;
+@media screen and (min-width: 600px) {
+  .populaire__single .wp-block-image:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-out;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+  }
 }
 
 /* layout.piedpage */
