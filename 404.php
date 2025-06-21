@@ -11,6 +11,7 @@
         <h1>Erreur 404</h1>
         <h2>L'adresse que vous demandez n'existe pas</h2>
         <img src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/404-error.webp" alt="404 error">
+        <?php home_url() ?>
     </div>
 </section>
 <?php get_footer(); ?>

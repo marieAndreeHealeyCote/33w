@@ -7,6 +7,16 @@
 <?php get_header() ?>
 <section class="populaire">
     <div class="populaire__category">
+        <h2>
+            <?php
+            //  Affiche le nom de la catégorie sur une page de catégorie.
+            single_cat_title()
+            ?>
+        </h2>
+        <?=
+        // Affiche la description de la catégorie actuelle dans les modèles de catégories.
+        category_description();
+        ?>
         <?php if (have_posts()) {
             while (have_posts()) {
                 the_post();
@@ -17,9 +27,12 @@
                         <?php the_post_thumbnail('thumbnail'); ?>
                     </div>
                     <div class="populaire__category__titre">
-                        <!-- affiche le titre principal du "post" -->
-                        <h2><?php the_title(); ?></h2>
-                        <!-- // Cette fonction permet d'afficher l'ensemble du contenu du post (article ou page) -->
+                        <h2>
+                            <?php
+                            //affiche le titre principal du "post"
+                            the_title();
+                            ?>
+                        </h2>
                         <?php
                         // Cette fonction permet de tronquer et d'afficher un permalien
                         $lien = ' [...] <a href="' . get_permalink() . '">Lire la suite</a>';

@@ -31,5 +31,9 @@
                             echo '<p>' . wp_trim_words(get_the_excerpt(), 10, $lien) . '</p>';
                             ?>
                         </p>
+                        <p>Température minimum: <?php the_field('temperature_minimum'); ?>°C</p>
+                        <p>Température maximum: <?php the_field('temperature_maximum'); ?>°C</p>
+                        <p>Température moyenne: <?php the_field('temperature_moyenne'); ?>°C</p>
+                        <?php the_category(); ?>
                     </article>
                 <?php endif; // if (in_category('galerie'))
