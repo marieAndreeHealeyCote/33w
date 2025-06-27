@@ -1,10 +1,10 @@
 <?php
-
-/**
+/*
  * Template-part hero.php
  * Permet d'afficher la section hero
  */
 ?>
+<?php $hero_auteur = get_theme_mod('hero_auteur', 'Marie-Andrée Healey-Côté'); ?>
 <div class="hero__contenu">
     <h1 class="hero__titre">Voyagez avec <br> <?php bloginfo('name') ?></h1>
     <p class="hero__description">
@@ -34,4 +34,5 @@
                 src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/iconetwitter.png"
                 alt="icone twitter" /></a>
     </div>
+    <p>Auteur du thème: <?= $hero_auteur ?></p>
 </div>
