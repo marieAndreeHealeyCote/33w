@@ -4,35 +4,35 @@
  * Permet d'afficher la section hero
  */
 ?>
-<?php $hero_auteur = get_theme_mod('hero_auteur', 'Marie-Andrée Healey-Côté'); ?>
+
+<?php
+// Déclaration de variables
+// Section hero
+$hero_auteur = get_theme_mod('hero_auteur', 'Default Author');
+$hero_description = get_theme_mod('hero_description', 'Default Description');
+$hero_courriel = get_theme_mod('hero_courriel', 'Default email');
+$hero_adresse = get_theme_mod('hero_adresse', 'Default address');
+$hero_telephone = get_theme_mod('hero_telephone', 'Default phone');
+$hero_cta_text = get_theme_mod('hero_cta_text', 'Default CTA');
+$hero_cta_link = get_theme_mod('hero_cta_link', '#');
+
+?>
+
+
 <div class="hero__contenu">
-    <h1 class="hero__titre">Voyagez avec <br> <?php bloginfo('name') ?></h1>
+    <h1 class="hero__titre"><?php bloginfo('name') ?></h1>
     <p class="hero__description">
         <?php bloginfo('description') ?>
-        Découvrez des destinations uniques et inoubliables avec Summer Holiday.
-        Nous vous offrons des expériences authentiques, des paysages à couper
-        le souffle et des aventures sur mesure. Partez à la découverte du
-        monde avec nous et créez des souvenirs impérissables.
+        <?= $hero_description ?>
     </p>
     <p class="hero__description">
-        info@cmaisonneuve.qc.ca <br />
-        3800, rue Sherbrooke, Montréal<br />
-        514-254-7131<br /><br />
-        <a href="#" class="bouton">S'inscrire</a>
+        <?= $hero_courriel ?> <br />
+        <?= $hero_adresse ?><br />
+        <?= $hero_telephone ?><br /><br />
+        <a href="<?= $hero_cta_link ?>" class="bouton"><?= $hero_cta_text ?></a>
     </p>
-    <div>
-        <a href="https://www.facebook.com" target="_blank"><img
-                class="hero__medias-sociaux"
-                src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/05/icone-facebook-3.png"
-                alt="icone-facebook" /></a>
-        <a href="https://www.instagram.com/" target="_blank"><img
-                class="hero__medias-sociaux"
-                src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/05/icone-instagram-2.png"
-                alt="icone-instagram" /></a>
-        <a href="https://x.com/" target="_blank"><img
-                class="hero__medias-sociaux"
-                src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/iconetwitter.png"
-                alt="icone twitter" /></a>
+    <div class="hero__medias-sociaux">
+        <?php get_template_part("templates/icone"); ?>
     </div>
     <p>Auteur du thème: <?= $hero_auteur ?></p>
 </div>

@@ -1,3 +1,9 @@
+    <?php
+    /*
+* Template-part populaire.php
+* Affiche une galerie d'image
+    */
+    ?>
     <div class="conteneur global">
         <?php if (have_posts()) {
             while (have_posts()) {

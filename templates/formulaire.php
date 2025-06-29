@@ -1,3 +1,9 @@
+<?php
+/*
+* Template-part formulaire.php
+* Affiche un formulaire à remplir pour inscription
+*/
+?>
 <form class="formulaire__contenu" action="#">
     <div class="formulaire__champs">
         <label for="lastname">Nom</label>

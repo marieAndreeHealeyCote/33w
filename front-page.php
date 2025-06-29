@@ -6,7 +6,7 @@
 ?>
 <?php get_header() ?>
 <!-- Section hero -->
-<section class="hero">
+<section class="hero" style="background-image: url('<?= get_template_directory_uri() ?>/images/nil-assouan-large.webp');">
     <?php get_template_part("templates/hero"); ?>
 </section>
 <!-- Section formulaire -->

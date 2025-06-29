@@ -157,7 +157,6 @@ img {
 
 /* layout.hero */
 .hero {
-  background-image: url("images/nil-assouan-large.webp");
   background-position: top;
   background-size: cover;
   height: 100vh;
@@ -196,13 +195,9 @@ img {
   }
 }
 .hero__medias-sociaux {
-  display: inline-block;
+  display: flex;
   margin-top: 1em;
-  max-width: 30px;
-  filter: drop-shadow(0 0 0.1em white);
-}
-.hero__medias-sociaux:hover {
-  filter: invert(1);
+  gap: 1em;
 }
 
 /* layout.formulaire */
@@ -293,6 +288,13 @@ img {
 }
 .populaire__404 img {
   display: inline-block;
+}
+.populaire__404 a {
+  color: seagreen;
+  text-decoration: none;
+}
+.populaire__404 a:hover {
+  text-decoration: underline;
 }
 .populaire__category {
   margin: 0 3em;
@@ -403,13 +405,7 @@ img {
 }
 .piedpage__s2__medias-sociaux {
   display: flex;
-}
-.piedpage__s2__medias-sociaux-items {
-  width: 50%;
-  filter: drop-shadow(0 0 0.1em white);
-}
-.piedpage__s2__medias-sociaux-items:hover {
-  filter: invert(1);
+  gap: 1em;
 }
 .piedpage__s2__externe ul {
   list-style: none;
@@ -545,4 +541,12 @@ img {
     flex-direction: column;
     align-items: center;
   }
+}
+.icone-reseaux-sociaux img {
+  display: block;
+  min-width: 30px;
+  filter: drop-shadow(0 0 0.1em white);
+}
+.icone-reseaux-sociaux img:hover {
+  filter: invert(1);
 }/*# sourceMappingURL=style.css.map */

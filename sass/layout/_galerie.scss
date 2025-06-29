@@ -47,6 +47,13 @@
     img {
       display: inline-block;
     }
+    a {
+      color: seagreen;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
   &__category {
     margin: 0 3em;

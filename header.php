@@ -1,3 +1,10 @@
+<?php
+/*
+* Modèle header
+* Affiche l'entête de la page
+*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

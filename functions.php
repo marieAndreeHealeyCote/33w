@@ -1,4 +1,11 @@
 <?php
+/*
+* functions.php
+* Gestion de toutes les fonctions utilisées
+*/
+?>
+
+<?php
 // Définir le chemin vers le dossier "functions"
 $functions_dir = get_template_directory() . '/functions/';
 

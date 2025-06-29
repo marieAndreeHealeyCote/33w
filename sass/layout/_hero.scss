@@ -1,6 +1,5 @@
 /* layout.hero */
 .hero {
-  background-image: url("images/nil-assouan-large.webp");
   background-position: top;
   background-size: cover;
   height: 100vh;
@@ -38,13 +37,8 @@
   }
 
   &__medias-sociaux {
-    display: inline-block;
+    display: flex;
     margin-top: 1em;
-    max-width: 30px;
-    filter: drop-shadow(0 0 0.1em white);
-
-    &:hover {
-      filter: invert(1);
-    }
+    gap: 1em;
   }
 }

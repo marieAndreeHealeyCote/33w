@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  * Template-part galerie.php
  * Permet d'afficher la galerie
  */
