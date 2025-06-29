@@ -222,56 +222,108 @@ function theme_33w_customize_register($wp_customize)
 
     // Liens sur le voyage
     // Lien #1
-    // Créer le champ
-    $wp_customize->add_setting('voyage_1_lien', array(
+    // Créer le champ texte
+    $wp_customize->add_setting('footer_text_lien1', array(
+        'default' => __('Nom du lien #1', 'theme_33w'),
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    // Configuration du contrôleur 
+    $wp_customize->add_control('footer_text_lien1', array(
+        'label' => __('Nom du lien #1', 'theme_33w'),
+        'section' => 'footer_section',
+        'type' => 'text',
+    ));
+
+    // Créer le champ texte URL
+    $wp_customize->add_setting('footer_url_lien1', array(
         'default' => '#',
         'sanitize_callback' => 'esc_url_raw',
     ));
 
     // Configuration du contrôleur
-    $wp_customize->add_control('voyage_1_lien', array(
+    $wp_customize->add_control('footer_url_lien1', array(
         'label' => __('Lien #1', 'theme_33w'),
         'section' => 'footer_section',
         'type' => 'url',
     ));
 
     // Lien #2
-    // Créer le champ
-    $wp_customize->add_setting('voyage_2_lien', array(
+    // Créer le champ texte
+    $wp_customize->add_setting('footer_text_lien2', array(
+        'default' => __('Nom du lien #1', 'theme_33w'),
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    // Configuration du contrôleur 
+    $wp_customize->add_control('footer_text_lien2', array(
+        'label' => __('Nom du lien #2', 'theme_33w'),
+        'section' => 'footer_section',
+        'type' => 'text',
+    ));
+
+    // Créer le champ URL
+    $wp_customize->add_setting('footer_url_lien2', array(
         'default' => '#',
         'sanitize_callback' => 'esc_url_raw',
     ));
 
     // Configuration du contrôleur
-    $wp_customize->add_control('voyage_2_lien', array(
+    $wp_customize->add_control('footer_url_lien2', array(
         'label' => __('Lien #2', 'theme_33w'),
         'section' => 'footer_section',
         'type' => 'url',
     ));
 
     // Lien #3
-    // Créer le champ
-    $wp_customize->add_setting('voyage_3_lien', array(
+    // Créer le champ texte
+    $wp_customize->add_setting('footer_text_lien3', array(
+        'default' => __('Nom du lien #1', 'theme_33w'),
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    // Configuration du contrôleur 
+    $wp_customize->add_control('footer_text_lien3', array(
+        'label' => __('Nom du lien #3', 'theme_33w'),
+        'section' => 'footer_section',
+        'type' => 'text',
+    ));
+
+    // Créer le champ URL
+    $wp_customize->add_setting('footer_url_lien3', array(
         'default' => '#',
         'sanitize_callback' => 'esc_url_raw',
     ));
 
     // Configuration du contrôleur
-    $wp_customize->add_control('voyage_3_lien', array(
+    $wp_customize->add_control('footer_url_lien3', array(
         'label' => __('Lien #3', 'theme_33w'),
         'section' => 'footer_section',
         'type' => 'url',
     ));
 
     // Lien #4
-    // Créer le champ
-    $wp_customize->add_setting('voyage_4_lien', array(
+    // Créer le champ texte
+    $wp_customize->add_setting('footer_text_lien4', array(
+        'default' => __('Nom du lien #4', 'theme_33w'),
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    // Configuration du contrôleur 
+    $wp_customize->add_control('footer_text_lien4', array(
+        'label' => __('Nom du lien #4', 'theme_33w'),
+        'section' => 'footer_section',
+        'type' => 'text',
+    ));
+
+    // Créer le champ URL
+    $wp_customize->add_setting('footer_url_lien4', array(
         'default' => '#',
         'sanitize_callback' => 'esc_url_raw',
     ));
 
     // Configuration du contrôleur
-    $wp_customize->add_control('voyage_4_lien', array(
+    $wp_customize->add_control('footer_url_lien4', array(
         'label' => __('Lien #4', 'theme_33w'),
         'section' => 'footer_section',
         'type' => 'url',
@@ -302,6 +354,20 @@ function theme_33w_customize_register($wp_customize)
     // Configuration du contrôleur de champs
     $wp_customize->add_control('footer_description', array(
         'label' => __('Description', 'theme_33w'),
+        'section' => 'footer_section',
+        'type' => 'text',
+    ));
+
+    // Champ telephone
+    // Configuration du champs 
+    $wp_customize->add_setting('footer_telephone', array(
+        'default' => __('', 'theme_33w'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+
+    // Configuration du contrôleur de champs
+    $wp_customize->add_control('footer_telephone', array(
+        'label' => __('Téléphone', 'theme_33w'),
         'section' => 'footer_section',
         'type' => 'text',
     ));

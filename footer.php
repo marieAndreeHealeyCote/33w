@@ -9,10 +9,17 @@
 // Déclaration de variables
 // Section footer
 $footer_auteur = get_theme_mod('footer_auteur', 'Default Author');
-$footer_cta_text = get_theme_mod('footer_cta_text', 'Default CTA');
-$footer_cta_link = get_theme_mod('footer_cta_link', '#');
+$footer_url_lien1 = get_theme_mod('footer_url_lien1', 'Default CTA');
+$footer_text_lien1 = get_theme_mod('footer_text_lien1', '#');
+$footer_url_lien2 = get_theme_mod('footer_url_lien2', 'Default CTA');
+$footer_text_lien2 = get_theme_mod('footer_text_lien2', '#');
+$footer_url_lien3 = get_theme_mod('footer_url_lien3', 'Default CTA');
+$footer_text_lien3 = get_theme_mod('footer_text_lien3', '#');
+$footer_url_lien4 = get_theme_mod('footer_url_lien4', 'Default CTA');
+$footer_text_lien4 = get_theme_mod('footer_text_lien4', '#');
 $footer_adresse = get_theme_mod('footer_adresse', 'Default address');
 $footer_description = get_theme_mod('footer_description', 'Default Description');
+$footer_telephone = get_theme_mod('footer_telephone', 'Default Phone');
 ?>
 <footer class="piedpage">
     <section class="piedpage__s1">
@@ -20,25 +27,25 @@ $footer_description = get_theme_mod('footer_description', 'Default Description')
             <h2>Liens sur le voyage</h2>
             <ul class="piedpage__s1__liens__liste">
                 <li>
-                    <a class="piedpage__s1__liens__liste-items" href="https://www.airtransat.com/fr-CA" target="_blank">Air Transat</a>
+                    <a class="piedpage__s1__liens__liste-items" href="<?= $footer_url_lien1 ?>" target="_blank"><?= $footer_text_lien1 ?></a>
                 </li>
                 <li>
-                    <a class="piedpage__s1__liens__liste-items" href="https://www.aircanada.com" target="_blank">Air Canada</a>
+                    <a class="piedpage__s1__liens__liste-items" href="<?= $footer_url_lien2 ?>" target="_blank"><?= $footer_text_lien2 ?></a>
                 </li>
                 <li>
-                    <a class="piedpage__s1__liens__liste-items" href="https://www.expedia.ca" target="_blank">Expedia.ca</a>
+                    <a class="piedpage__s1__liens__liste-items" href="<?= $footer_url_lien3 ?>" target="_blank"><?= $footer_text_lien3 ?></a>
                 </li>
                 <li>
-                    <a class="piedpage__s1__liens__liste-items" href="https://www.tripadvisor.ca/" target="_blank">Tripadvisor</a>
+                    <a class="piedpage__s1__liens__liste-items" href="<?= $footer_url_lien4 ?>" target="_blank"><?= $footer_text_lien4 ?></a>
                 </li>
             </ul>
         </div>
         <div class="piedpage__s1__adresse">
             <div class="piedpage__s1__adresse__coord">
                 <h2>Adresse</h2>
-                <p>
-                    3800, rue Sherbrooke, Montréal, Québec, Canada, H1X 2A2 <br />
-                    514-254-7131
+                <p> <?= $footer_adresse ?>
+                    <br />
+                    <?= $footer_telephone ?>
                 </p>
                 <?php get_search_form() ?>
             </div>
@@ -46,11 +53,7 @@ $footer_description = get_theme_mod('footer_description', 'Default Description')
         <div class="piedpage__s1__description">
             <h2>Mission du Club de Voyage</h2>
             <p>
-                Notre mission est d'inspirer et d'informer nos voyageurs et
-                voyageuses sur des destinations de voyage qui répondent à leurs
-                attentes. Nous favorisons les échanges et le partage d'expériences à
-                travers des activités sociales variées, telles que des rencontres,
-                des conférences et des dîners.
+                <?= $footer_description ?>
             </p>
         </div>
     </section>
