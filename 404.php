@@ -12,7 +12,7 @@
         <h2>L'adresse que vous demandez n'existe pas ...</h2>
         <img src="http://localhost/iniationGestionnaireContenu/33w/wp-content/uploads/2025/06/404-error.webp" alt="404 error">
         <br>
-        <a href="<?php home_url(); ?>">Retour à la page d'accueil →</a>
+        <a href="<?= home_url(); ?>">Retour à la page d'accueil →</a>
     </div>
 </section>
 <?php get_footer(); ?>
