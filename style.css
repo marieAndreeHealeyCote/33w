@@ -357,6 +357,14 @@ img {
     cursor: pointer;
   }
 }
+.populaire__single a {
+  color: seagreen;
+}
+.populaire__single a:hover {
+  text-decoration: underline;
+  background-color: seagreen;
+  color: white;
+}
 
 /* layout.piedpage */
 .piedpage {

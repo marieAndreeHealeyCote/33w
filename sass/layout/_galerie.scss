@@ -121,5 +121,13 @@
         cursor: pointer;
       }
     }
+    a {
+      color: seagreen;
+      &:hover{
+        text-decoration: underline;
+        background-color: seagreen;
+        color: white;
+      }
+    }
   }
 }
