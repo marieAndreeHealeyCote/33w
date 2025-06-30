@@ -27,7 +27,7 @@ else:
         <p>
             <?php
             // Cette fonction permet de tronquer et d'afficher un permalien
-            $lien = ' [...] <a href="' . get_permalink() . '">Suite</a>';
+            $lien = ' [...] <a href="' . get_permalink() . '"><br>Lire la suite →</a>';
             echo '<p>' . wp_trim_words(get_the_excerpt(), 10, $lien) . '</p>';
             ?>
         </p>
