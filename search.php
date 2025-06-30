@@ -23,7 +23,7 @@
                         <!-- // Cette fonction permet d'afficher l'ensemble du contenu du post (article ou page) -->
                         <?php
                         // Cette fonction permet de tronquer et d'afficher un permalien
-                        $lien = ' [...] <a href="' . get_permalink() . '">Lire la suite</a>';
+                        $lien = ' [...] <a href="' . get_permalink() . '"><br>Lire la suite →</a>';
                         echo '<p>' . wp_trim_words(get_the_excerpt(), 50, $lien) . '</p>';
                         ?>
                     </div>
