@@ -32,7 +32,7 @@ $hero_cta_link = get_theme_mod('hero_cta_link', '#');
         <a href="<?= $hero_cta_link ?>" class="bouton"><?= $hero_cta_text ?></a>
     </p>
     <div class="hero__medias-sociaux">
-        <?php get_template_part("templates/icone"); ?>
+        <?php get_template_part("templates/icone-reseaux-sociaux"); ?>
     </div>
     <p>Auteur du thème: <?= $hero_auteur ?></p>
 </div>
