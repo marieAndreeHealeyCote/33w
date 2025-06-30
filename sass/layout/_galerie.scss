@@ -49,9 +49,9 @@
     }
     a {
       color: seagreen;
-      text-decoration: none;
       &:hover{
-        text-decoration: underline;
+        background-color: seagreen;
+        color: white;
       }
     }
   }
