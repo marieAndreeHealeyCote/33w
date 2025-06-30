@@ -1,6 +1,6 @@
-# TP1 site club de voyage
+# TP2: Personnalisation et intégration avancée
 
-### Première et deuxième étapes du développement d'un thème WP
+### Première étape: Ajouter des champs personnalisés
 
 #### Auteur : Marie-Andrée Healey-Côté
 
