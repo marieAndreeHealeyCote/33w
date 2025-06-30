@@ -59,7 +59,7 @@ $footer_telephone = get_theme_mod('footer_telephone', 'Default Phone');
     </section>
     <section class="piedpage__s2">
         <div class="piedpage__s2__medias-sociaux">
-            <?php get_template_part("templates/icone"); ?>
+            <?php get_template_part("templates/icone-reseaux-sociaux"); ?>
         </div>
         <div class="piedpage__s2__externe">
             <?php wp_nav_menu(array(
