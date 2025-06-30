@@ -13,7 +13,7 @@ $hero_description = get_theme_mod('hero_description', 'Default Description');
 $hero_courriel = get_theme_mod('hero_courriel', 'Default email');
 $hero_adresse = get_theme_mod('hero_adresse', 'Default address');
 $hero_telephone = get_theme_mod('hero_telephone', 'Default phone');
-$hero_cta_text = get_theme_mod('hero_cta_text', 'Default CTA');
+$hero_cta_texte = get_theme_mod('hero_cta_texte', 'Default CTA');
 $hero_cta_link = get_theme_mod('hero_cta_link', '#');
 
 ?>
@@ -29,7 +29,7 @@ $hero_cta_link = get_theme_mod('hero_cta_link', '#');
         <?= $hero_courriel ?> <br />
         <?= $hero_adresse ?><br />
         <?= $hero_telephone ?><br /><br />
-        <a href="<?= $hero_cta_link ?>" class="bouton"><?= $hero_cta_text ?></a>
+        <a href="<?= $hero_cta_link ?>" class="bouton"><?= $hero_cta_texte ?></a>
     </p>
     <div class="hero__medias-sociaux">
         <?php get_template_part("templates/icone-reseaux-sociaux"); ?>
