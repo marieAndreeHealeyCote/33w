@@ -99,7 +99,7 @@ function theme_33w_customize_register($wp_customize)
     // Bouton
     // Créer le champ
     $wp_customize->add_setting('hero_cta_texte', array(
-        'default' => __('', 'theme_33w'),
+        'default' => __('Texte du Bouton', 'theme_33w'),
         'sanitize_callback' => 'sanitize_text_field',
     ));
 
