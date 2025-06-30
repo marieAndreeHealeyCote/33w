@@ -300,6 +300,16 @@ img {
   margin: 0 3em;
   max-width: var(600px);
 }
+.populaire__category .lien-accueil {
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+  color: seagreen;
+}
+.populaire__category .lien-accueil:hover {
+  background-color: seagreen;
+  color: white;
+}
 .populaire__category__contenu {
   display: flex;
   justify-content: space-between;
@@ -480,13 +490,13 @@ img {
 .conteneur {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 15px;
 }
 .conteneur__carte {
   display: flex;
   flex-direction: column;
   flex: 1 0 300px;
-  justify-content: space-between;
+  justify-content: center;
   border: 1px solid seagreen;
   padding: 10px;
   align-items: center;
@@ -511,6 +521,10 @@ img {
 }
 .conteneur h2 {
   height: 2em;
+  text-align: center;
+}
+.conteneur p {
+  text-align: center;
 }
 
 /* components.bouton */

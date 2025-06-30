@@ -59,6 +59,17 @@
     margin: 0 3em;
     max-width: var($point-rupture);
 
+    .lien-accueil {
+      margin: 0 auto;
+      display: block;
+      width: fit-content;
+      color: seagreen;
+      &:hover{
+        background-color: seagreen;
+        color: white;
+      }
+    }
+
     &__contenu {
       display: flex;
       justify-content: space-between;

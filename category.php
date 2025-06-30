@@ -43,6 +43,7 @@
         <?php
             }
         } ?>
+        <a class="lien-accueil" href="<?= home_url(); ?>">Retour à la page d'accueil →</a>
     </div>
 </section>
 <?php get_footer(); ?>
