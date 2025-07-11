@@ -1,11 +1,13 @@
 /* layout.piedpage */
+.piedpage-fond {
+  background-color: seagreen;
+  padding: 3em;
+}
+
 .piedpage {
   margin-top: 2em;
-  padding: 3em;
-  background-color: seagreen;
   color: white;
   text-shadow: black 1px 0 10px;
-  box-shadow: inset 0px 10px 5px -5px rgba(50, 50, 50, 0.75);
 
   &__s1 {
     @media screen and (min-width: $point-rupture) {

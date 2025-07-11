@@ -377,13 +377,15 @@ img {
 }
 
 /* layout.piedpage */
+.piedpage-fond {
+  background-color: seagreen;
+  padding: 3em;
+}
+
 .piedpage {
   margin-top: 2em;
-  padding: 3em;
-  background-color: seagreen;
   color: white;
   text-shadow: black 1px 0 10px;
-  box-shadow: inset 0px 10px 5px -5px rgba(50, 50, 50, 0.75);
 }
 @media screen and (min-width: 600px) {
   .piedpage__s1 {
@@ -573,8 +575,4 @@ img {
 }
 
 /* Animation */
-/* anim-hero.scss */
-.hero__titre {
-  transform: translateY(-500px);
-  transition: transform 2s;
-}/*# sourceMappingURL=style.css.map */
+/* anim-hero.scss *//*# sourceMappingURL=style.css.map */
