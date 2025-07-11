@@ -1,5 +1,17 @@
 /* anim-hero.scss */
-// .hero__titre {
-//   transform: translateY(-500px);
-//   transition: transform 2s;
-// }
+.hero__titre {
+  animation-duration: 3s;
+  animation-name: hero-translation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes hero-translation {
+  from {
+    translate: 100px 0;
+  }
+
+  to {
+    translate: 0 0;
+  }
+}

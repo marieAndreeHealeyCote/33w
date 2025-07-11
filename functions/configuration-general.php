@@ -3,6 +3,7 @@
 /**
  * Conguration générale du thème
  */
+
 // correction d'une erreur wp_ob_en_flush_all s'affichant sur la page
 remove_action('shutdown', 'wp_ob_end_flush_all', 1);
 

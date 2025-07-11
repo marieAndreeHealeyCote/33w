@@ -575,4 +575,19 @@ img {
 }
 
 /* Animation */
-/* anim-hero.scss *//*# sourceMappingURL=style.css.map */
+/* anim-hero.scss */
+.hero__titre {
+  animation-duration: 3s;
+  animation-name: hero-translation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes hero-translation {
+  from {
+    translate: 100px 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}/*# sourceMappingURL=style.css.map */
