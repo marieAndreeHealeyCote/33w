@@ -1,4 +1,4 @@
-/* script.checkbox.js*/
+/* scripts.checkbox.js*/
 (function () {
     function mettreAJourCheckbox() {
         const burgerBtn = document.querySelector(".entete__burger");

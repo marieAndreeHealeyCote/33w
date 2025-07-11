@@ -570,4 +570,11 @@ img {
 }
 .icone-reseaux-sociaux img:hover {
   filter: hue-rotate(90deg);
+}
+
+/* Animation */
+/* anim-hero.scss */
+.hero__titre {
+  transform: translateY(-500px);
+  transition: transform 2s;
 }/*# sourceMappingURL=style.css.map */
