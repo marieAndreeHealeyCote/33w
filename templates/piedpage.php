@@ -19,7 +19,13 @@ $footer_text_lien4 = get_theme_mod('footer_text_lien4', '#');
 $footer_adresse = get_theme_mod('footer_adresse', 'Default address');
 $footer_description = get_theme_mod('footer_description', 'Default Description');
 $footer_telephone = get_theme_mod('footer_telephone', 'Default Phone');
+$footer_couleur = get_theme_mod('footer_couleur');
 ?>
+<style>
+    .piedpage__s1 h2 {
+        color: <?= $footer_couleur ?>
+    }
+</style>
 
 <section class="piedpage__s1">
     <div class="piedpage__s1__liens">

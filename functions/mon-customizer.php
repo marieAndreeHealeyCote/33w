@@ -96,6 +96,20 @@ function theme_33w_customize_register($wp_customize)
         'section' => 'hero_section',
     )));
 
+    // Couleur du texte de la section hero
+    // Champ couleur
+    // Créer le champs 
+    $wp_customize->add_setting('hero_couleur', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Créer le contrôleur
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_couleur', array(
+        'label' => __('Couleur du texte', 'theme_33w'),
+        'section' => 'hero_section',
+    )));
+
     // Bouton
     // Créer le champ
     $wp_customize->add_setting('hero_cta_texte', array(
@@ -371,6 +385,20 @@ function theme_33w_customize_register($wp_customize)
         'section' => 'footer_section',
         'type' => 'text',
     ));
+
+    // Couleur du texte de la section hero
+    // Champ couleur
+    // Créer le champs 
+    $wp_customize->add_setting('footer_couleur', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Créer le contrôleur
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_couleur', array(
+        'label' => __('Couleur du texte', 'theme_33w'),
+        'section' => 'footer_section',
+    )));
 }
 
 add_action('customize_register', 'theme_33w_customize_register');

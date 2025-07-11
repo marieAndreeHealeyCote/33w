@@ -15,9 +15,14 @@ $hero_adresse = get_theme_mod('hero_adresse', 'Default address');
 $hero_telephone = get_theme_mod('hero_telephone', 'Default phone');
 $hero_cta_texte = get_theme_mod('hero_cta_texte', 'Default CTA');
 $hero_cta_link = get_theme_mod('hero_cta_link', '#');
-
+$hero_couleur = get_theme_mod('hero_couleur');
 ?>
 
+<style>
+    .hero__titre {
+        color: <?= $hero_couleur ?>
+    }
+</style>
 
 <div class="hero__contenu">
     <h1 class="hero__titre"><?php bloginfo('name') ?></h1>
