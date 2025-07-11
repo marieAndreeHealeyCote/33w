@@ -37,7 +37,7 @@ $hero_couleur = get_theme_mod('hero_couleur');
         <a href="<?= $hero_cta_link ?>" class="bouton"><?= $hero_cta_texte ?></a>
     </p>
     <div class="hero__medias-sociaux">
-        <?php get_template_part("templates/icone-reseaux-sociaux"); ?>
+        <?php icone_sociaux('#2e8b57') ?>
     </div>
     <p>Auteur du thème: <?= $hero_auteur ?></p>
 </div>

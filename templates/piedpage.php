@@ -64,7 +64,7 @@ $footer_couleur = get_theme_mod('footer_couleur');
 </section>
 <section class="piedpage__s2">
     <div class="piedpage__s2__medias-sociaux">
-        <?php get_template_part("templates/icone-reseaux-sociaux"); ?>
+        <?php icone_sociaux($footer_couleur) ?>
     </div>
     <div class="piedpage__s2__externe">
         <?php wp_nav_menu(array(
