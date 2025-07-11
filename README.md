@@ -2,6 +2,8 @@
 
 ### Première étape : Ajouter des champs personnalisés
 
+### Deuxième étape : Intégrer le Customizer WordPress
+
 #### Auteur : Marie-Andrée Healey-Côté
 
 #### Adresse de la page github-page: https://marieandreehealeycote.github.io/33w/
