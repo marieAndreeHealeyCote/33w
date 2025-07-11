@@ -1,13 +1,12 @@
 .conteneur {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
-  // padding: 0 25%;
+  gap: 15px;
   &__carte {
     display: flex;
     flex-direction: column;
     flex: 1 0 300px;
-    justify-content: space-between;
+    justify-content: center;
     border: 1px solid seagreen;
     padding: 10px;
     align-items: center;
@@ -34,5 +33,10 @@
   }
   h2 {
     height: 2em;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
   }
 }

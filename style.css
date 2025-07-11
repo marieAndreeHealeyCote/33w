@@ -157,7 +157,6 @@ img {
 
 /* layout.hero */
 .hero {
-  background-image: url("images/nil-assouan-large.webp");
   background-position: top;
   background-size: cover;
   height: 100vh;
@@ -196,13 +195,9 @@ img {
   }
 }
 .hero__medias-sociaux {
-  display: inline-block;
+  display: flex;
   margin-top: 1em;
-  max-width: 30px;
-  filter: drop-shadow(0 0 0.1em white);
-}
-.hero__medias-sociaux:hover {
-  filter: invert(1);
+  gap: 1em;
 }
 
 /* layout.formulaire */
@@ -226,7 +221,7 @@ img {
   gap: 1em;
   align-items: flex-end;
 }
-.formulaire__contenu input[type="submit"] {
+.formulaire__contenu input[type=submit] {
   border: 1px solid seagreen;
   background-color: white;
   padding: 0.75em 3.15em;
@@ -234,7 +229,7 @@ img {
   font-size: 16px;
   text-transform: uppercase;
 }
-.formulaire__contenu input[type="submit"]:hover {
+.formulaire__contenu input[type=submit]:hover {
   background-color: seagreen;
   color: white;
   cursor: pointer;
@@ -294,9 +289,26 @@ img {
 .populaire__404 img {
   display: inline-block;
 }
+.populaire__404 a {
+  color: seagreen;
+}
+.populaire__404 a:hover {
+  background-color: seagreen;
+  color: white;
+}
 .populaire__category {
   margin: 0 3em;
   max-width: var(600px);
+}
+.populaire__category .lien-accueil {
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+  color: seagreen;
+}
+.populaire__category .lien-accueil:hover {
+  background-color: seagreen;
+  color: white;
 }
 .populaire__category__contenu {
   display: flex;
@@ -355,6 +367,14 @@ img {
     cursor: pointer;
   }
 }
+.populaire__single a {
+  color: seagreen;
+}
+.populaire__single a:hover {
+  text-decoration: underline;
+  background-color: seagreen;
+  color: white;
+}
 
 /* layout.piedpage */
 .piedpage {
@@ -403,13 +423,7 @@ img {
 }
 .piedpage__s2__medias-sociaux {
   display: flex;
-}
-.piedpage__s2__medias-sociaux-items {
-  width: 50%;
-  filter: drop-shadow(0 0 0.1em white);
-}
-.piedpage__s2__medias-sociaux-items:hover {
-  filter: invert(1);
+  gap: 1em;
 }
 .piedpage__s2__externe ul {
   list-style: none;
@@ -476,13 +490,13 @@ img {
 .conteneur {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 15px;
 }
 .conteneur__carte {
   display: flex;
   flex-direction: column;
   flex: 1 0 300px;
-  justify-content: space-between;
+  justify-content: center;
   border: 1px solid seagreen;
   padding: 10px;
   align-items: center;
@@ -507,6 +521,10 @@ img {
 }
 .conteneur h2 {
   height: 2em;
+  text-align: center;
+}
+.conteneur p {
+  text-align: center;
 }
 
 /* components.bouton */
@@ -545,4 +563,12 @@ img {
     flex-direction: column;
     align-items: center;
   }
-} /*# sourceMappingURL=style.css.map */
+}
+.icone-reseaux-sociaux img {
+  display: block;
+  min-width: 30px;
+  filter: drop-shadow(0 0 0.1em white);
+}
+.icone-reseaux-sociaux img:hover {
+  filter: invert(1);
+}/*# sourceMappingURL=style.css.map */

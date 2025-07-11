@@ -8,8 +8,8 @@
 <?php get_header() ?>
 <section class="populaire">
     <div class="populaire__single">
-        <?php if (have_posts()) {
-            while (have_posts()) {
+        <?php if (have_posts()):
+            while (have_posts()):
                 the_post();
                 // affiche l'image "mise en avant" miniature
                 the_post_thumbnail('medium_large');
@@ -20,18 +20,16 @@
                     the_title();
                     ?>
                 </h1>
-                <?php
+        <?php
                 // Cette fonction permet d'afficher l'ensemble du contenu du post (article ou page)
                 the_content();
                 // Affiche un lien de modification pour l’article
-                edit_post_link(); ?>
-                <br>
-        <?php
-                //Affiche les liens vers les articles suivants et précédents.
-                next_post_link();
-                previous_post_link();
-            }
-        } ?>
+                edit_post_link();
+            endwhile;
+        endif;
+        ?>
+        <br>
+        <a href="<?= home_url(); ?>">Retour à la page d'accueil →</a>
     </div>
 </section>
 <?php get_footer(); ?>

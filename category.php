@@ -35,7 +35,7 @@
                         </h2>
                         <?php
                         // Cette fonction permet de tronquer et d'afficher un permalien
-                        $lien = ' [...] <a href="' . get_permalink() . '">Lire la suite</a>';
+                        $lien = ' [...] <a href="' . get_permalink() . '"><br>Lire la suite →</a>';
                         echo '<p>' . wp_trim_words(get_the_excerpt(), 50, $lien) . '</p>';
                         ?>
                     </div>
@@ -43,6 +43,7 @@
         <?php
             }
         } ?>
+        <a class="lien-accueil" href="<?= home_url(); ?>">Retour à la page d'accueil →</a>
     </div>
 </section>
 <?php get_footer(); ?>
