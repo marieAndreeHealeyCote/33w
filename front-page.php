@@ -5,11 +5,10 @@
 */
 ?>
 <?php get_header() ?>
-<section class="hero">
-    <!-- Section hero -->
-    <?php
-    // ajouter la section hero
-    get_template_part("templates/hero"); ?>
+<!-- Section hero -->
+<?php $hero_background = get_theme_mod("hero_background"); ?>
+<section class="hero" style="background-image: url('<?= $hero_background ?>');">
+    <?php get_template_part("templates/hero"); ?>
 </section>
 <section class="formulaire">
     <form class="formulaire__contenu" action="#">
