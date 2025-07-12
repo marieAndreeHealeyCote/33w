@@ -82,7 +82,6 @@ $footer_telephone = get_theme_mod('footer_telephone', 'Default Phone');
         </section>
     </div>
 </footer>
-<script src="scripts/checkbox.js"></script>
 <?php wp_footer() ?>
 </body>
 
