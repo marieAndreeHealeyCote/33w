@@ -23,6 +23,22 @@
   &__titre {
     color: black;
     text-shadow: white 1px 0 10px;
+
+    // ANIMATION
+    animation-duration: 3s;
+    animation-name: hero-translation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+  @keyframes hero-translation {
+    from {
+      translate: 100px 0;
+    }
+
+    to {
+      translate: 0 0;
+    }
   }
 
   &__description {

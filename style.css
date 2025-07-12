@@ -181,6 +181,18 @@ img {
 .hero__titre {
   color: black;
   text-shadow: white 1px 0 10px;
+  animation-duration: 3s;
+  animation-name: hero-translation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes hero-translation {
+  from {
+    translate: 100px 0;
+  }
+  to {
+    translate: 0 0;
+  }
 }
 .hero__description {
   max-width: 56ch;
@@ -572,22 +584,4 @@ img {
 }
 .icone-reseaux-sociaux img:hover {
   filter: hue-rotate(90deg);
-}
-
-/* Animation */
-/* anim-hero.scss */
-.hero__titre {
-  animation-duration: 3s;
-  animation-name: hero-translation;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes hero-translation {
-  from {
-    translate: 100px 0;
-  }
-  to {
-    translate: 0 0;
-  }
 }/*# sourceMappingURL=style.css.map */
