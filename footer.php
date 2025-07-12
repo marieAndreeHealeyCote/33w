@@ -23,7 +23,6 @@ $footer_telephone = get_theme_mod('footer_telephone', 'Default Phone');
 
 <footer class="piedpage">
     <?php vague("#fff", '#2e8b57'); ?>
-    <?php get_template_part("templates/piedpage"); ?>
 
     <style>
         .piedpage__s1 h2 {
