@@ -177,6 +177,7 @@ img {
   padding: 2em;
   border: 1px solid seashell;
   border-radius: 30px;
+  color: seagreen;
 }
 .hero__titre {
   color: black;
@@ -548,7 +549,7 @@ img {
   width: fit-content;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: seagreen;
   font-size: 14px;
   border: 1px solid lightseagreen;
   border-radius: 5px;
