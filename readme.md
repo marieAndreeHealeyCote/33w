@@ -1,8 +1,10 @@
 # TP2 Personnalisation et intégration avancée
 
-### Première étape : Ajouter des champs personnalisés
-
 ### Deuxième étape : Intégrer le Customizer WordPress
+#### Ajouter des options dans le Customizer
+#### Ajouter deux panneaux dans le customizer
+#### Ajouter une animation sur les composants de la section « Hero »
+#### Optimiser le code en remplaçant certain template-part par des fonctions
 
 #### Auteur : Marie-Andrée Healey-Côté
 

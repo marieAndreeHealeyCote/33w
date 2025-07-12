@@ -40,12 +40,36 @@ function charger_scripts_et_styles()
         null
     );
 
-    // Ajouter un script
+    // Checkbox
     $script_path = get_template_directory() . '/scripts/checkbox.js';
     $script_url  = get_template_directory_uri() . '/scripts/checkbox.js';
 
     wp_enqueue_script(
-        'checkbox',
+        'mon-script',
+        $script_url,
+        array(),
+        filemtime($script_path),
+        true
+    );
+
+    // Carrousel
+    $script_path = get_template_directory() . '/scripts/carrousel.js';
+    $script_url  = get_template_directory_uri() . '/scripts/carrousel.js';
+
+    wp_enqueue_script(
+        'mon-carrousel',
+        $script_url,
+        array(),
+        filemtime($script_path),
+        true
+    );
+
+    // Destination
+    $script_path = get_template_directory() . '/scripts/destination.js';
+    $script_url  = get_template_directory_uri() . '/scripts/destination.js';
+
+    wp_enqueue_script(
+        'destination',
         $script_url,
         array(),
         filemtime($script_path),
