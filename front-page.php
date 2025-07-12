@@ -33,5 +33,7 @@
 <!-- Section populaire -->
 <section class="populaire">
     <?php get_template_part("templates/populaire"); ?>
+    <h2 class="destination__titre">Articles de la catégorie</h2>
+    <div class="destination__list"></div>
 </section>
 <?php get_footer(); ?>

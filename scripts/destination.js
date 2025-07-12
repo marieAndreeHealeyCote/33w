@@ -1,7 +1,7 @@
 /* scripts.destination.js */
 (function () {
     const categoryId = 4; // Remplacez par l'ID de la catégorie souhaitée
-    const domaine = document.querySelector("base").href;
+    const domaine = document.querySelector('base').href;
     const apiUrl = `${domaine}/wp-json/wp/v2/posts?categories=${categoryId}`;
     console.log("apiUrl = ", apiUrl);
     fetch(apiUrl)
