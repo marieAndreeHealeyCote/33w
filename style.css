@@ -504,6 +504,11 @@ img {
   text-align: center;
   padding: 2em 30%;
 }
+@media screen and (max-width: 1024px) {
+  .erreur404__conteneur {
+    padding: 2em 10%;
+  }
+}
 .erreur404__image {
   position: absolute;
   top: 0;
@@ -512,6 +517,12 @@ img {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+  .erreur404__image {
+    width: auto;
+    height: 100%;
+  }
 }
 .erreur404__titre {
   display: inline-block;

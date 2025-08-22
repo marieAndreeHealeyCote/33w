@@ -7,6 +7,10 @@
         position: relative;
         text-align: center;
         padding: 2em 30%;
+
+        @media screen and (max-width: 1024px) {
+           padding: 2em 10%;
+      }
     }
     
     &__image {
@@ -17,6 +21,11 @@
         width: 100%;
         height: auto;
         object-fit: cover;
+
+        @media screen and (max-width: 1024px) {
+            width: auto;
+            height: 100%;
+      }
     }
    
     &__titre {
