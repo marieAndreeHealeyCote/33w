@@ -7,8 +7,8 @@
 ?>
 
 <?php get_header() ?>
-<section class="populaire">
-    <div class="populaire__404">
+<section class="erreur404">
+    <div class="erreur404__conteneur">
         <?php get_template_part("templates/erreur404"); ?>
     </div>
 </section>

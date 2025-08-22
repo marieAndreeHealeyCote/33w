@@ -495,6 +495,63 @@ img {
   }
 }
 
+/* layout.erreur404 */
+.erreur404 {
+  margin-top: 2em;
+}
+.erreur404__conteneur {
+  position: relative;
+  text-align: center;
+  padding: 2em 30%;
+}
+.erreur404__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+.erreur404__titre {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.665);
+  width: fit-content;
+  padding: 2em;
+  border: 1px solid seashell;
+  border-radius: 30px;
+  text-align: center;
+}
+.erreur404__description {
+  background-color: rgba(255, 255, 255, 0.665);
+  width: fit-content;
+  padding: 2em;
+  border: 1px solid seashell;
+  border-radius: 30px;
+  text-align: center;
+}
+.erreur404__bouton-accueil {
+  display: block;
+  padding: 0.5em;
+  width: fit-content;
+  text-decoration: none;
+  background-color: yellow;
+  color: lightskyblue;
+  border-radius: 5px;
+  align-items: center;
+}
+.erreur404__bouton-menu {
+  background-color: yellow;
+  color: black;
+}
+.erreur404 a {
+  color: seagreen;
+  text-decoration: none;
+}
+.erreur404 a:hover {
+  background-color: seagreen;
+  color: white;
+}
+
 /* Components */
 /* components.recherche */
 .recherche {

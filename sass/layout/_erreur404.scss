@@ -1,12 +1,68 @@
 /* layout.erreur404 */
 
 .erreur404{
+    margin-top: 2em;
+
+    &__conteneur { 
+        position: relative;
+        text-align: center;
+        padding: 2em 30%;
+    }
+    
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: auto;
+    }
+   
+    &__titre {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.665);
+        width: fit-content;
+        padding: 2em;
+        border: 1px solid seashell;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    &__description {
+        background-color: rgba(255, 255, 255, 0.665);
+        width: fit-content;
+        padding: 2em;
+        border: 1px solid seashell;
+        border-radius: 30px;
+        text-align: center;
+    }
+
     &__bouton-accueil{
+        display: block;
+        padding: 0.5em;
+        width: fit-content;
+
+        text-decoration: none;
         background-color: yellow;
         color: lightskyblue;
+        border-radius: 5px;
+        align-items: center;
     }
+
     &__bouton-menu{
         background-color: yellow;
         color: black;
     }
+
+    a {
+      color: seagreen;
+      text-decoration: none;
+      &:hover{
+        background-color: seagreen;
+        color: white;
+      }
+    }
+    // &__recherche{
+    //     background-color:;
+    // }
 }
