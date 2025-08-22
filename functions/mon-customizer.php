@@ -425,6 +425,68 @@ function theme_33w_customize_register($wp_customize)
         'label' => __('Couleur du texte', 'theme_33w'),
         'section' => 'footer_section',
     )));
+
+    // SECTION 404 //
+    // Ajout du panneau erreur 404
+    $wp_customize->add_section('erreur404_section', array(
+        'title' => __('Section erreur 404', 'theme_33w'),
+        'priority' => 30,
+    ));
+
+    // Image fond
+    // Créer le champ
+    $wp_customize->add_setting('erreur404_background', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Créer le contrôleur
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'erreur404_background', array(
+        'label' => __('Image en arrière plan', 'theme_33w'),
+        'section' => 'erreur404_section',
+    )));
+
+    // Champ titre
+    // Configuration du champs 
+    $wp_customize->add_setting('erreur404_titre', array(
+        'default' => __('', 'theme_33w'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+
+    // Configuration du contrôleur de champs
+    $wp_customize->add_control('erreur404_titre', array(
+        'label' => __('Titre', 'theme_33w'),
+        'section' => 'erreur404_section',
+        'type' => 'text',
+    ));
+
+    // Champ description
+    // Configuration du champs 
+    $wp_customize->add_setting('erreur404_description', array(
+        'default' => __('', 'theme_33w'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+
+    // Configuration du contrôleur de champs
+    $wp_customize->add_control('erreur404_description', array(
+        'label' => __('Description', 'theme_33w'),
+        'section' => 'erreur404_section',
+        'type' => 'text',
+    ));
+
+    // Couleur du texte de la section 404
+    // Champ couleur
+    // Créer le champs 
+    $wp_customize->add_setting('erreur404_couleur', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Créer le contrôleur
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'erreur404_couleur', array(
+        'label' => __('Couleur du texte', 'theme_33w'),
+        'section' => 'erreur404_section',
+    )));
 }
 
 add_action('customize_register', 'theme_33w_customize_register');
