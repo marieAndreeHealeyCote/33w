@@ -62,7 +62,16 @@
         color: white;
       }
     }
-    // &__recherche{
-    //     background-color:;
-    // }
+    &__recherche{
+        .recherche {
+            background-color: transparent;
+        }
+        input{
+            color: yellow;
+            border: none;
+            outline: none;
+            border-bottom: 1px yellow;
+            background-color: transparent;
+        }
+    }
 }

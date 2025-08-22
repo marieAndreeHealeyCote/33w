@@ -551,6 +551,16 @@ img {
   background-color: seagreen;
   color: white;
 }
+.erreur404__recherche .recherche {
+  background-color: transparent;
+}
+.erreur404__recherche input {
+  color: yellow;
+  border: none;
+  outline: none;
+  border-bottom: 1px yellow;
+  background-color: transparent;
+}
 
 /* Components */
 /* components.recherche */
