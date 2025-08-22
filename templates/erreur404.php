@@ -13,7 +13,11 @@ $erreur404_background = get_theme_mod('erreur404_background');
 $erreur404_description = get_theme_mod('erreur404_description', 'Default Description');
 ?>
 <style>
-    .hero__titre {
+    .erreur404__titre {
+        color: <?= $erreur404_couleur ?>
+    }
+
+    .erreur404__description {
         color: <?= $erreur404_couleur ?>
     }
 </style>
@@ -28,13 +32,13 @@ $erreur404_description = get_theme_mod('erreur404_description', 'Default Descrip
 <div class="erreur404___bouton-menu">
 
 </div>
-<div class="erreur404__recherche">
-    <?php get_search_form() ?>
-</div>
-<div class="erreur404__nav">
+<div class="erreur404__nav erreur404__bouton-menu">
     <?php wp_nav_menu(array(
         "menu" => "destination",
         'container' => '',
         'menu_class' => '',
     )); ?>
+</div>
+<div class="erreur404__recherche">
+    <?php get_search_form() ?>
 </div>

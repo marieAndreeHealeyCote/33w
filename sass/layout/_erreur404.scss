@@ -16,25 +16,24 @@
         z-index: -1;
         width: 100%;
         height: auto;
+        object-fit: cover;
     }
    
     &__titre {
         display: inline-block;
-        background-color: rgba(255, 255, 255, 0.665);
+        background-color: rgba(255, 255, 255, 0.3);
         width: fit-content;
         padding: 2em;
-        border: 1px solid seashell;
-        border-radius: 30px;
         text-align: center;
+        text-shadow: black 1px 0 10px;
     }
 
     &__description {
-        background-color: rgba(255, 255, 255, 0.665);
+        background-color: rgba(255, 255, 255, 0.3);
         width: fit-content;
         padding: 2em;
-        border: 1px solid seashell;
-        border-radius: 30px;
         text-align: center;
+        text-shadow: black 1px 0 10px;
     }
 
     &__bouton-accueil{
@@ -43,35 +42,60 @@
         width: fit-content;
 
         text-decoration: none;
-        background-color: yellow;
+        background-color: #ffc201;
         color: lightskyblue;
         border-radius: 5px;
-        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    &__bouton-menu{
-        background-color: yellow;
-        color: black;
-    }
+    &__nav {
+        text-decoration: none;
+        #menu-destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            list-style-type:none;
 
+            a {
+                display: block;
+                background-color: #ffc201;
+                color: black;
+                border-radius: 5px;
+                padding: 0.5em;
+                
+                &:hover{
+                     text-decoration: underline;
+                    color: white;
+                }                
+            }
+        }
+
+        
+    }
     a {
       color: seagreen;
       text-decoration: none;
       &:hover{
-        background-color: seagreen;
+        text-decoration: underline;
         color: white;
       }
     }
     &__recherche{
         .recherche {
             background-color: transparent;
+            border: none;
+            img {
+                display: none;
+            }
         }
         input{
-            color: yellow;
-            border: none;
-            outline: none;
-            border-bottom: 1px yellow;
+            color: #ffc201;
+            text-decoration: underline;
             background-color: transparent;
+            font-size: 24px;
+            font-weight: bold;
         }
     }
 }
