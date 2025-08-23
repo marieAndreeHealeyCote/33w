@@ -97,33 +97,33 @@ function extraire_list_categories($nom_categorie, $nom_categorie_a_exclure)
 
 function carte($cat_a_retirer)
 {
-
-    $categorie_a_exclure = get_category_by_slug($cat_a_retirer);
-    // Cette fonction renvoie true si l’article en cours appartient à la catégorie spécifiée, ou à l’une de ses sous-catégories.
-    if (in_category('galerie')):
-        echo "<article class='conteneur__galerie'>";
-        // Cette fonction permet d'afficher l'ensemble du contenu du post (article ou page)
-        the_content();
-        echo "</article>";
-    else:
+    $categorie = get_category_by_slug($cat_a_retirer);
+    $categorie_galerie = get_category_by_slug('galerie');
+    $posts = get_posts([
+        'category' => $categorie->term_id,
+        'category__not_in' => [$categorie_galerie->term_id],
+        'posts_per_page' => 6,
+    ]);
+    foreach ($posts as $post):
         $post_lien = ' [...] <a href="' . get_permalink() . '"><br>Lire la suite →</a>';
 ?>
         <article class="conteneur__carte">
-            <?php the_post_thumbnail('miniature'); ?>
-            <h2><?php the_title(); ?></h2>
-            <p><?= wp_trim_words(get_the_excerpt(), 10, $post_lien) ?></p>
+            <?= get_the_post_thumbnail($post, 'miniature'); ?>
+            <h2><?= get_the_title($post); ?></h2>
+            <p><?= wp_trim_words(get_the_excerpt($post), 10, $post_lien) ?></p>
 
-            <p>Température minimum: <?php the_field('temperature_minimum'); ?>°C</p>
-            <p>Température maximum: <?php the_field('temperature_maximum'); ?>°C</p>
-            <p>Température moyenne: <?php the_field('temperature_moyenne'); ?>°C</p>
+            <p>Température minimum: <?php the_field('temperature_minimum', $post->ID); ?>°C</p>
+            <p>Température maximum: <?php the_field('temperature_maximum', $post->ID); ?>°C</p>
+            <p>Température moyenne: <?php the_field('temperature_moyenne', $post->ID); ?>°C</p>
             <?php
-            $categories = get_the_category();
+            $categories = get_the_category($post->ID);
             foreach ($categories as $category) {
                 if ($category->slug == "destination") continue;
-                if ($categorie_a_exclure->slug == $category->slug) continue;
+                if ($categorie->slug == $category->slug) continue;
                 echo '<a href="' . get_category_link($category) . '">' . $category->name . '</a>';
             }
             ?>
         </article>
-<?php endif; // if (in_category('galerie'))
+<?
+    endforeach;
 }

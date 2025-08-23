@@ -16,7 +16,8 @@
 </section>
 <!-- Section populaire -->
 <section class="populaire">
-    <?php carte('populaire'); ?>
+    <div class="conteneur global"><?php get_template_part("templates/galerie"); ?></div>
+    <div class="conteneur global"><?php carte('populaire'); ?></div>
 </section>
 <!-- section rest-api -->
 <section class="destination">
