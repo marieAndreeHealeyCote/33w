@@ -25,10 +25,10 @@
                 data.forEach((article) => {
                     const articleElement = document.createElement("div");
                     articleElement.innerHTML = `
+          <input type="checkbox" class="accordeon__chk"  id="accordeon__chk__${article.id}">        
           <label class="accordeon" for="accordeon__chk__${article.id}">
                     <h3>${article.title.rendered}</h3>
           </label>  
-          <input type="checkbox" class="accordeon__chk"  id="accordeon__chk__${article.id}">        
           <div class="accordeon__excerpt">${article.excerpt.rendered}
           <a href="${article.link}">Lire plus</a>
           </div>
