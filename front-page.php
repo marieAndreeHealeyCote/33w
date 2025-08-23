@@ -26,4 +26,4 @@
     <h2 class="destination__titre">Articles de la catégorie</h2>
     <div class="destination__list"></div>
 </section>
-<?php get_footer(); ?>
+<?php get_footer(null, ['vague' => ['couleur_haut' => '#C1D9D0', 'couleur_bas' => null]]); ?>

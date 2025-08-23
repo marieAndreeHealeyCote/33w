@@ -33,7 +33,15 @@ $footer_telephone = get_theme_mod('footer_telephone', 'Default Phone');
         </style>
     <?php endif; ?>
     <div class="piedpage__decoration">
-        <?php vague("#C1D9D0", null); ?>
+        <?php
+        $couleur_haut = '#fff';
+        $couleur_bas = null;
+        if (isset($args['vague'])) {
+            $couleur_haut = $args['vague']['couleur_haut'];
+            $couleur_bas = $args['vague']['couleur_bas'];
+        }
+        vague($couleur_haut, $couleur_bas);
+        ?>
     </div>
     <style>
         .piedpage__s1 h2 {
