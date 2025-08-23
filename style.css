@@ -230,26 +230,6 @@ img {
   }
 }
 
-.carrousel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-.carrousel__form {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
 /* layout.formulaire */
 .formulaire {
   display: flex;
@@ -332,19 +312,6 @@ img {
 
 .populaire {
   margin-top: 2em;
-}
-.populaire__404 {
-  text-align: center;
-}
-.populaire__404 img {
-  display: inline-block;
-}
-.populaire__404 a {
-  color: seagreen;
-}
-.populaire__404 a:hover {
-  background-color: seagreen;
-  color: white;
 }
 .populaire__category {
   margin: 0 3em;
@@ -735,4 +702,47 @@ img {
   max-height: 200px;
 }
 
-/* input type="checkbox" *//*# sourceMappingURL=style.css.map */
+/* input type="checkbox" */
+/*components.carrousel*/
+.carrousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.carrousel__form {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  opacity: 1;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=style.css.map */

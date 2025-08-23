@@ -85,6 +85,19 @@ function theme_33w_customize_register($wp_customize)
 
     // Champs nombre d'images 
     // Section à ajouter (faire une boucle ?)
+    // Créer le champ
+    $wp_customize->add_setting('hero_carrousel', array(
+        'default' => __('3', 'theme_33w'),
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    // Créer le contrôleur
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'hero_carrousel', array(
+        'label' => __('Nombre images', 'theme_33w'),
+        'section' => 'hero_section',
+        'type' => 'select',
+        'choices' => ['3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8'],
+    )));
 
     // Image 0
     // Créer le champ
@@ -122,6 +135,71 @@ function theme_33w_customize_register($wp_customize)
     // Créer le contrôleur
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_2', array(
         'label' => __('Image en arrière plan 2', 'theme_33w'),
+        'section' => 'hero_section',
+    )));
+
+    // Image 3
+    // Créer le champ
+    $wp_customize->add_setting('hero_background_3', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Créer le contrôleur
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_3', array(
+        'label' => __('Image en arrière plan 3', 'theme_33w'),
+        'section' => 'hero_section',
+    )));
+
+    // Image 4
+    // Créer le champ
+    $wp_customize->add_setting('hero_background_4', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Créer le contrôleur
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_4', array(
+        'label' => __('Image en arrière plan 4', 'theme_33w'),
+        'section' => 'hero_section',
+    )));
+
+    // Image 5
+    // Créer le champ
+    $wp_customize->add_setting('hero_background_5', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Créer le contrôleur
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_5', array(
+        'label' => __('Image en arrière plan 5', 'theme_33w'),
+        'section' => 'hero_section',
+    )));
+
+    // Image 6
+    // Créer le champ
+    $wp_customize->add_setting('hero_background_6', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Créer le contrôleur
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_6', array(
+        'label' => __('Image en arrière plan 6', 'theme_33w'),
+        'section' => 'hero_section',
+    )));
+
+    // Image 7
+    // Créer le champ
+    $wp_customize->add_setting('hero_background_7', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Créer le contrôleur
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_7', array(
+        'label' => __('Image en arrière plan 7', 'theme_33w'),
         'section' => 'hero_section',
     )));
 
