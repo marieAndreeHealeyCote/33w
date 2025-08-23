@@ -42,19 +42,7 @@
 
 .populaire {
   margin-top: 2em;
-  &__404 {
-    text-align: center;
-    img {
-      display: inline-block;
-    }
-    a {
-      color: seagreen;
-      &:hover{
-        background-color: seagreen;
-        color: white;
-      }
-    }
-  }
+  
   &__category {
     margin: 0 3em;
     max-width: var($point-rupture);

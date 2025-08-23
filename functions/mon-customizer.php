@@ -2,6 +2,9 @@
 /*
  * Configuration des nouveaux panneaux du customizer
  */
+
+use function PHPSTORM_META\type;
+
 function theme_33w_customize_register($wp_customize)
 {
     // Le code pour ajouter des sections, des réglages et des contrôles ira ici.
