@@ -1,5 +1,7 @@
 /* layout.formulaire */
 .formulaire {
+  position: relative;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;

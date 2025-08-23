@@ -1,16 +1,21 @@
 # TP2 Personnalisation et intégration avancée
 
-### Troisieme étape : Création du modèle 404.php
-#### Ajouter une nouvelle section : section_404
-#### Ajouter une image en arrière plan
-#### Ajouter une couleur d’arrière plan des boutons et la zone de recherche
-#### Ajouter du contenu texte : titre et message
-#### Intégrer un nouveau menu 
-#### Template-part et organisations des fichier
-###### Layout/erreur-404.scss utilise le standard BEM et permet de formater en partie la page d’erreur 404
-###### Votre ancienne erreur-404 et la nouvelle erreur-404 devront en partie se retrouver dans le dossier « gabarit » 
-###### Le modèle 404.php utilise le gabarit erreur-404 de l’EF
+### Troisieme étape : L’objectif de cette dernière étape est d’enrichir le site en ajoutant de nouvelles fonctionnalités, d’adapter celles déjà en place, tout en améliorant le design, l’adaptabilité aux différents formats d’écran et l’intégration générale du site.
 
+#### Créer un carrousel pour la section « Hero »
+#### Animer le texte de la zone « Hero »
+#### Faire une fonction pour les cartes de la section « Populaire » 
+#### Faire en sorte que la section filtre par REST-API soit entièrement dynamique et contenir un accordéon (animé)
+#### Utiliser une image svg doit pour séparer les sections de chacune des pages.  
+#### Ajouter dans le footer, dont le design et l’intégration amélioré, une image de destination sélectionnée à partir du customizer 
+#### Faire en sorte que la liste des icones sociaux soit générée par une fonction au lieu du get_template_part(). 
+#### Afficher chaque destination individuelle par le modèle single-post.php.
+#### Ajouter un formulaire d’inscription dans une nouvelle section de la page d’accueil
+#### Revoir les modèles category.php, search.php, 404.php et header.php:
+###### Le modèle category.php utilise la fonction carte() pour afficher les cartes de destinations
+###### Le nombre de résultats de recherche précèdes les résultats de recherche
+###### La page 404.php est claire et original
+###### Le design et l’intégration de ces modèles a été amélioré depuis la version de l’étape-2 du TP2
 
 #### Auteur : Marie-Andrée Healey-Côté
 
