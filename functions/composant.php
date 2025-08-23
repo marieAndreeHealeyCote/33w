@@ -3,7 +3,12 @@
  * Gabarits sous forme de fonctions. Chacune peut être paramétré
  * 
  */
+?>
 
+<?php
+/*
+ * Fonction qui permet de générer les icônes des médias sociaux
+ */
 
 function icone_sociaux($couleur)
 {
@@ -38,7 +43,7 @@ function icone_sociaux($couleur)
 
 <?php
 /*
- * générateur de vague pour séparer deux sections
+ * Fonction qui permet un générateur de vague pour séparer deux sections
  */
 
 function vague($couleur_haut, $couleur_bas)
@@ -58,3 +63,31 @@ function vague($couleur_haut, $couleur_bas)
         </path>
     </svg>
 <?php } ?>
+
+<?php
+/**
+ * Fonction qui permet d'extraire les catégories dans la bd de WP
+ */
+
+function extraire_list_categories($nom_categorie)
+{
+    //$parent_category_id = get_term_by("slug", $nom_categorie, "category");
+    $parent_category = get_category_by_slug($nom_categorie);
+    $tableau = array(
+        'parent' => $parent_category->term_id,
+        'hide_empty' => true
+    );
+    $list_categories = get_categories($tableau);
+    echo "<ul class='list_categories'>";
+    foreach ($list_categories as $categorie) {
+        echo "<li data-id='" . $categorie->term_id . "'>" . $categorie->name . "</li>";
+    }
+    echo "</ul>";
+}
+?>
+
+<?php
+
+/**
+ * Fonction qui permet d'afficher les cartes des destinations
+ */

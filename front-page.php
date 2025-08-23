@@ -17,12 +17,10 @@
 <!-- Section populaire -->
 <section class="populaire">
     <?php get_template_part("templates/populaire"); ?>
-
-    <ul class="list_categories">
-        <li data-id="4">Pleine Nature</li>
-        <li data-id="3">Aventure</li>
-    </ul>
-
+</section>
+<!-- section rest-api -->
+<section class="destination">
+    <?php extraire_list_categories("destination"); ?>
     <h2 class="destination__titre">Articles de la catégorie</h2>
     <div class="destination__list"></div>
 </section>
