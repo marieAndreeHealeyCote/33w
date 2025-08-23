@@ -48,7 +48,7 @@ function icone_sociaux($couleur)
 
 function vague($couleur_haut, $couleur_bas = null)
 { ?>
-    <svg class="style-vague" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position: relative; top: 9px; <?php if ($couleur_bas != null) echo "background-color: $couleur_bas;"; ?>">
+    <svg class="style-vague" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position: relative; <?php if ($couleur_bas != null) echo "background-color: $couleur_bas;"; ?>">
         <path
             fill="<?= $couleur_haut ?>"
             fill-opacity="1"
@@ -99,7 +99,7 @@ function carte($cat_a_retirer)
         'posts_per_page' => 6,
     ]);
     foreach ($posts as $post):
-        $post_lien = ' [...] <a href="' . get_permalink() . '"><br>Lire la suite →</a>';
+        $post_lien = ' [...] <a href="' . get_permalink($post) . '"><br>Lire la suite →</a>';
 ?>
         <article class="conteneur__carte">
             <?= get_the_post_thumbnail($post, 'miniature'); ?>

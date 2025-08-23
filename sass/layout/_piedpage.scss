@@ -1,11 +1,13 @@
 /* layout.piedpage */
 .piedpage {
+  box-sizing: border-box;
   color: white;
   text-shadow: black 1px 0 10px;
-  padding: 3em;
+  padding: 4em 3em 3em 3em;
   background-color: seagreen;
 
   &__decoration{
+    box-sizing: border-box;
     margin: -4em -3em 0 -3em;
 
   }
