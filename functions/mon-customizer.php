@@ -344,19 +344,6 @@ function theme_33w_customize_register($wp_customize)
         'priority' => 30,
     ));
 
-    // Ajout d'une image
-    // Créer le champ
-    $wp_customize->add_setting('footer_background', array(
-        'default' => '',
-        'sanitize_callback' => 'esc_url_raw',
-    ));
-
-    // Créer le contrôleur
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'footer_background', array(
-        'label' => __('Image en arrière plan', 'theme_33w'),
-        'section' => 'footer_section',
-    )));
-
     // Liens sur le voyage
     // Lien #1
     // Créer le champ texte
@@ -509,7 +496,20 @@ function theme_33w_customize_register($wp_customize)
         'type' => 'text',
     ));
 
-    // Couleur du texte de la section hero
+    // Ajout d'une image dans la section footer
+    // Créer le champ
+    $wp_customize->add_setting('footer_background', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Créer le contrôleur
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'footer_background', array(
+        'label' => __('Image', 'theme_33w'),
+        'section' => 'footer_section',
+    )));
+
+    // Couleur du texte de la section footer
     // Champ couleur
     // Créer le champs 
     $wp_customize->add_setting('footer_couleur', array(

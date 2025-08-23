@@ -16,11 +16,11 @@
 </section>
 <!-- Section populaire -->
 <section class="populaire">
-    <?php get_template_part("templates/populaire"); ?>
+    <?php carte('populaire'); ?>
 </section>
 <!-- section rest-api -->
 <section class="destination">
-    <?php extraire_list_categories("destination"); ?>
+    <?php extraire_list_categories("destination", "galerie"); ?>
     <h2 class="destination__titre">Articles de la catégorie</h2>
     <div class="destination__list"></div>
 </section>

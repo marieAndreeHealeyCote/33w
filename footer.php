@@ -8,6 +8,7 @@
 // Déclaration de variables
 // Section footer
 $footer_couleur = get_theme_mod('footer_couleur');
+$footer_background = get_theme_mod('footer_background');
 $footer_url_lien1 = get_theme_mod('footer_url_lien1', 'Default CTA');
 $footer_text_lien1 = get_theme_mod('footer_text_lien1', '#');
 $footer_url_lien2 = get_theme_mod('footer_url_lien2', 'Default CTA');
@@ -22,6 +23,15 @@ $footer_telephone = get_theme_mod('footer_telephone', 'Default Phone');
 ?>
 
 <footer class="piedpage">
+    <?php if ($footer_background != ''): ?>
+        <style>
+            .piedpage {
+                background: url(<?= $footer_background; ?>);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    <?php endif; ?>
     <div class="piedpage__decoration">
         <?php vague("#fff", '#2e8b57'); ?>
     </div>
