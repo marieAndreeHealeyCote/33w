@@ -397,7 +397,6 @@ img {
 
 /* layout.piedpage */
 .piedpage {
-  margin-top: 2em;
   color: white;
   text-shadow: black 1px 0 10px;
   padding: 3em;
@@ -703,11 +702,12 @@ img {
 .accordeon__excerpt {
   transform: height;
   transition: all 0.5s ease-out;
+  border: 1px solid #d0a720;
+  background-color: lightyellow;
 }
 
 .accordeon__chk:checked ~ .accordeon__excerpt {
   max-height: 300px;
-  border: 1px solid seagreen;
   padding: 0.5em;
 }
 
@@ -718,7 +718,8 @@ img {
 
 /* input type="checkbox" */
 .destination {
-  padding: 1em;
+  padding: 1em 1em 3em 1em;
+  background-color: #C1D9D0;
 }
 .destination .list_categories {
   display: flex;
@@ -736,8 +737,8 @@ img {
   cursor: pointer;
 }
 .destination__list h3 {
-  border: 1px solid seagreen;
-  background-color: #c1d9d0;
+  background-color: #ffc201;
+  border: 1px solid #d0a720;
   padding: 0.5em;
   margin-bottom: 0;
 }

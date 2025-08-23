@@ -12,11 +12,12 @@
   // animation
   transform: height;
   transition: all 0.5s ease-out;
+  border: 1px solid #d0a720;
+  background-color: lightyellow;
 }
 
 .accordeon__chk:checked ~ .accordeon__excerpt {
   max-height: 300px;
-  border: 1px solid seagreen;
   padding: 0.5em;
 }
 
@@ -30,7 +31,8 @@
 /* input type="checkbox" */
 
 .destination {
-  padding: 1em;
+  padding: 1em 1em 3em 1em;
+  background-color: #C1D9D0;
 
   .list_categories {
     display: flex;
@@ -52,8 +54,8 @@
 
   &__list {
     h3 {
-      border: 1px solid seagreen;
-      background-color: #c1d9d0;
+      background-color: #ffc201;
+      border: 1px solid #d0a720;
       padding: 0.5em;
       margin-bottom: 0;
 

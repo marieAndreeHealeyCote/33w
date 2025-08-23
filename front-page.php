@@ -18,6 +18,7 @@
 <section class="populaire">
     <div class="conteneur global"><?php get_template_part("templates/galerie"); ?></div>
     <div class="conteneur global"><?php carte('populaire'); ?></div>
+    <?php vague('#FFF', '#C1D9D0'); ?>
 </section>
 <!-- section rest-api -->
 <section class="destination">

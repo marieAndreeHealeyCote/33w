@@ -46,15 +46,9 @@ function icone_sociaux($couleur)
  * Fonction qui permet un générateur de vague pour séparer deux sections
  */
 
-function vague($couleur_haut, $couleur_bas)
+function vague($couleur_haut, $couleur_bas = null)
 { ?>
-    <style>
-        .style-vague {
-            position: relative;
-            top: 9px;
-        }
-    </style>
-    <svg class="style-vague" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg class="style-vague" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position: relative; top: 9px; <?php if ($couleur_bas != null) echo "background-color: $couleur_bas;"; ?>">
         <path
             fill="<?= $couleur_haut ?>"
             fill-opacity="1"

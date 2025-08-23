@@ -33,7 +33,7 @@ $footer_telephone = get_theme_mod('footer_telephone', 'Default Phone');
         </style>
     <?php endif; ?>
     <div class="piedpage__decoration">
-        <?php vague("#fff", '#2e8b57'); ?>
+        <?php vague("#C1D9D0", null); ?>
     </div>
     <style>
         .piedpage__s1 h2 {
