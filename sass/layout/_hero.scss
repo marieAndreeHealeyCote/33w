@@ -11,9 +11,11 @@
   }
 
   &__contenu {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.665);
     width: fit-content;
     padding: 2em;
+    margin: 2em;
     border: 1px solid seashell;
     border-radius: 30px;
     color: seagreen;
@@ -24,19 +26,17 @@
     text-shadow: white 1px 0 10px;
 
     // ANIMATION
-    animation-duration: 3s;
-    animation-name: hero-translation;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+    animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
+  }
 
-  @keyframes hero-translation {
-    from {
-      translate: 100px 0;
+   // ANIMATION KEYFRAMES
+  @keyframes anime-titre {
+    0% {
+      transform: translateY(-200px);
     }
 
-    to {
-      translate: 0 0;
+    100% {
+      transform: translateY(0);
     }
   }
 
@@ -45,9 +45,25 @@
     font-size: 1.1em;
     font-weight: bold;
     text-shadow: white 1px 0 10px;
+
     @media screen and (max-width: $point-rupture) {
       max-width: 30ch;
       font-size: 16px;
+    }
+    // ANIMATION
+    animation: anime-description 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
+  }
+
+  // ANIMATION KEYFRAMES
+  @keyframes anime-description {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
     }
   }
 
@@ -55,6 +71,20 @@
     display: flex;
     margin-top: 1em;
     gap: 1em;
+
+    // ANIMATION
+    animation: anime-medias 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
+  }
+
+     // ANIMATION KEYFRAMES
+  @keyframes anime-medias {
+    0% {
+      transform: translateY(-200px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
   }
 }
 

@@ -83,6 +83,9 @@ function theme_33w_customize_register($wp_customize)
         'type' => 'text',
     ));
 
+    // Champs nombre d'images 
+    // Section à ajouter (faire une boucle ?)
+
     // Image 0
     // Créer le champ
     $wp_customize->add_setting('hero_background_0', array(

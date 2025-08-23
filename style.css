@@ -170,9 +170,11 @@ img {
   }
 }
 .hero__contenu {
+  position: relative;
   background-color: rgba(255, 255, 255, 0.665);
   width: fit-content;
   padding: 2em;
+  margin: 2em;
   border: 1px solid seashell;
   border-radius: 30px;
   color: seagreen;
@@ -180,17 +182,14 @@ img {
 .hero__titre {
   color: black;
   text-shadow: white 1px 0 10px;
-  animation-duration: 3s;
-  animation-name: hero-translation;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
 }
-@keyframes hero-translation {
-  from {
-    translate: 100px 0;
+@keyframes anime-titre {
+  0% {
+    transform: translateY(-200px);
   }
-  to {
-    translate: 0 0;
+  100% {
+    transform: translateY(0);
   }
 }
 .hero__description {
@@ -198,6 +197,7 @@ img {
   font-size: 1.1em;
   font-weight: bold;
   text-shadow: white 1px 0 10px;
+  animation: anime-description 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
 }
 @media screen and (max-width: 600px) {
   .hero__description {
@@ -205,10 +205,29 @@ img {
     font-size: 16px;
   }
 }
+@keyframes anime-description {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .hero__medias-sociaux {
   display: flex;
   margin-top: 1em;
   gap: 1em;
+  animation: anime-medias 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
+}
+@keyframes anime-medias {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .carrousel {
@@ -702,4 +721,18 @@ img {
 }
 .icone-reseaux-sociaux img:hover {
   filter: hue-rotate(90deg);
-}/*# sourceMappingURL=style.css.map */
+}
+
+.accordeon__chk {
+  display: none;
+}
+.accordeon__excerpt {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordeon__chk:checked ~ .accordeon__excerpt {
+  max-height: 200px;
+}
+
+/* input type="checkbox" *//*# sourceMappingURL=style.css.map */
