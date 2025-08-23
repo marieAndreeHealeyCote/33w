@@ -31,7 +31,6 @@
 /* input type="checkbox" */
 
 .destination {
-  padding: 1em 1em 3em 1em;
   background-color: #C1D9D0;
 
   .list_categories {
@@ -50,6 +49,10 @@
       cursor: pointer;
     }
    }
+  }
+
+  &__contenu {
+    padding: 3em 2em;
   }
 
   &__list {

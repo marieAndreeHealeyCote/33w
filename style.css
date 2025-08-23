@@ -760,7 +760,6 @@ img {
 
 /* input type="checkbox" */
 .destination {
-  padding: 1em 1em 3em 1em;
   background-color: #C1D9D0;
 }
 .destination .list_categories {
@@ -777,6 +776,9 @@ img {
 }
 .destination .list_categories li:hover {
   cursor: pointer;
+}
+.destination__contenu {
+  padding: 3em 2em;
 }
 .destination__list h3 {
   background-color: #ffc201;
