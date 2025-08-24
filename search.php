@@ -8,6 +8,9 @@
 <?php get_header() ?>
 <section class="populaire">
     <div class="populaire__category">
+        <div>
+            <h1><?= $wp_query->post_count ?> résultat<?= $wp_query->post_count > 1 ? 's' : '' ?> de recherche</h1>
+        </div>
         <?php if (have_posts()) {
             while (have_posts()) {
                 the_post();
